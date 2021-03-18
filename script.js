@@ -3,6 +3,7 @@ $(document).ready(function(){
         items: 3,
         loop: true,
         nav: true,
+        center: true,
         dots: true,
         dotsEach: true,
         responsiveRefreshRate: 200,
@@ -16,7 +17,12 @@ $(document).ready(function(){
         responsive:{
             0:{
                 items: 1.5,
-                center: true,
+            },
+            576:{
+                items: 1.5,
+            },
+            768:{
+                items: 3,
             },
             1024:{
                 items:3,

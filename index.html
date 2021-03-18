@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header d-flex justify-content-between align-items-center d-none">
-        <div class="header_logoblock d-flex ">
+    <header class="header d-flex justify-content-between align-items-center">
+        <div class="header_logoblock d-flex align-items-center">
             <div class="header_logoblock-img">
                 <img src="./img/logo.png" alt="" class="header_logo-img">
             </div>
-            <p class="header_logo-desc mb-0">Сеть 
+            <p class="header_logo-desc mb-0">Сеть <br class="d-none"> 
                 стоматологических
                 клиник в Москве</p>
         </div>
@@ -51,7 +51,7 @@
     
     <section class="plan">
         <div class="container">
-            <div class="plan_container row flex-column flex-lg-row justify-content-center align-items-center align-items-lg-stretch">
+            <div class="plan_container row flex-column flex-md-row justify-content-center align-items-center align-items-lg-stretch">
                 <div class="plan_left col-12 col-lg-5 offset-xl-1">
                     <img src="./img/plan-left.png" alt="" class="plan_img">
                 </div>
@@ -120,11 +120,11 @@
                         стоматология
                     </h3>
                     <div class="service_item-desc">
-                        <span class="service_desc-list">
+                        <p class="service_desc-list">
                             Лечение кариеса <br>
                             Лечение пульпита <br>
                             Лечение периодонтита
-                        </span>
+                        </p>
                     </div>
                 </div>
                 <div class="service_item col-6 col-lg-4">
@@ -136,11 +136,11 @@
                         зубов
                     </h3>
                     <div class="service_item-desc">
-                        <span class="service_desc-list">
+                        <p class="service_desc-list">
                             Тотальная имплантация<br>
                             Одномоментная имплантация<br>
                             All-on-4 (все зубы на 4 имплантах) 
-                        </span>
+                        </p>
                     </div>
                 </div>
                 <div class="service_item  col-6 col-lg-4">
@@ -152,11 +152,11 @@
                         стоматология
                     </h3>
                     <div class="service_item-desc">
-                        <span class="service_desc-list">
+                        <p class="service_desc-list">
                             Герметизация фиссур<br>
                             Лечение кариеса<br>
                             молочных зубов 
-                        </span>
+                        </p>
                     </div>
                 </div>
                 <div class="service_item  col-6 col-lg-4">
@@ -167,11 +167,11 @@
                         Ортодонтия
                     </h3>
                     <div class="service_item-desc">
-                        <span class="service_desc-list">
+                        <p class="service_desc-list">
                             Исправление прикуса<br>
                             с помощью брекет-системы<br>
                             Тренеры, пластинки
-                        </span>
+                        </p>
                     </div>
                 </div>
                 <div class="service_item  col-6 col-lg-4">
@@ -182,11 +182,11 @@
                         Хирургия
                     </h3>
                     <div class="service_item-desc">
-                        <span class="service_desc-list">
+                        <p class="service_desc-list">
                             Удаление зуба<br>
                             Синус-лифтинг<br>
                             Костная пластика
-                        </span>
+                        </p>
                     </div>
                 </div>
                 <div class="service_item  col-6 col-lg-4">
@@ -197,21 +197,25 @@
                         Ортопедия
                     </h3>
                     <div class="service_item-desc">
-                        <span class="service_desc-list">
+                        <p class="service_desc-list">
                             Съемное, несъёмное протезирование<br>
                             Металлокерамические коронки<br>
                             Безметалловая керамика
-                        </span>
+                        </p>
                     </div>
                 </div>
             </div>
+
             <div class="service_img-wrap col-12">
                 <img src="./img/consult.png" alt="" class="service_img w-100 d-lg-none">
             </div>
         </div>
+        <div class="service_scalp-block">
+            <img src="./img/consult-scalpe.png" alt="" class="service_scalp-img">
+        </div>
     </section>
     
-    <section class="consult">
+    <section class="consult col-12 col-sm-10 col-md-8 col-lg-12 mx-auto overflow-hidden">
         <div class="container">
             <div class="consult_wrap col-10 mx-auto">
                 <div class="consult_top ">
@@ -269,55 +273,71 @@
                 </div>
             </div>
         </div>
+        <div class="consult_scalp-block d-md-none">
+            <img src="./img/consult-scalpe.png" alt="" class="consult_scalp-img">
+        </div>
     </section>
     
     <section class="because" style="overflow: hidden;">
-        <div class="container">
-            <div class="because_wrap">
-                <h2 class="because-title text-center">
-                    <span class="mark-span">Нам доверяют</span>
-                    лечение зубов уже 7 лет
-                </h2>
-                <div class="because_list">
-                    <div class="because_list-item row justify-content-end align-items-center">
-                        <div class="col-5 px-0">
-                            <p class="because_item-desc">
-                                <span class="because_item-title d-block"> потому что:</span>
-                                Наши врачи работают на <span class="mark-span">дорогостоящем оборудовании.</span>
-                                Это повышает качество работы более чем в 20 раз.   
-                            </p>
-                        </div>
-                        <div class="col-6 px-0">
-                            <div class="because_item-wrap">
-                                <img src="./img/because-1.png" alt="" class="because_item-img">
+        <div class="because-pre-wrap mx-auto">
+            <div class="container">
+                <div class="because_wrap">
+                    <h2 class="because-title text-center">
+                        <span class="mark-span">Нам доверяют</span>
+                        лечение зубов уже 7 лет
+                    </h2>
+                    <div class="because_list">
+                        <div class="because_list-item row justify-content-end align-items-center">
+                            <div class="col-5 px-0">
+                                <p class="because_item-title d-block mb-0"> потому что:</p>
+                                <p class="because_item-desc">
+                                    Наши врачи работают на <span class="mark-span">дорогостоящем оборудовании.</span>
+                                    Это повышает качество работы более чем в 20 раз.   
+                                </p>
+                            </div>
+                            <div class="col-6 px-0">
+                                <div class="because_item-wrap">
+                                    <img src="./img/because-1.png" alt="" class="because_item-img because_item-img-1">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="because_list-item row flex-row-reverse justify-content-start align-items-center">
-                        <div class="col-6 px-0">
-                            <p class="because_item-desc" style='text-align: right;'>
-                                <span class="because_item-title d-block"> потому что:</span>
-                                Наши врачи работают на <span class="mark-span">дорогостоящем оборудовании.</span>
-                                Это повышает качество работы более чем в 20 раз.   
-                            </p>
-                        </div>
-                        <div class="col-6 px-0 d-flex justify-content-start">
-                            <div class="because_item-wrap">
-                                <img src="./img/because-2.png" alt="" class="because_item-img">
+                        <div class="because_list-item row flex-row-reverse justify-content-start align-items-center">
+                            <div class="col-6 px-0">
+                                <p class="because_item-title d-block mb-0" style="text-align: right;"> из-за того, что:</p>
+                                <p class="because_item-desc" style='text-align: right;'>
+                                    <span class="mark-span">
+                                        У нас фиксированные цены.
+                                    </span>
+                                    В нашей клинике
+                                    невозможно такое,
+                                    что один пациент
+                                    лечитсяна одну сумму,
+                                    а второй на другую при
+                                    одинаковых видах услуг.
+    
+                                </p>
+                            </div>
+                            <div class="col-6 px-0 d-flex justify-content-start">
+                                <div class="because_item-wrap">
+                                    <img src="./img/because-2.png" alt="" class="because_item-img because_item-img-2">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="because_list-item row  justify-content-end align-items-center">
-                        <div class="col-5 px-0">
-                            <p class="because_item-desc">
-                                <span class="because_item-title d-block"> потому что:</span>
-                                Наши врачи работают на <span class="mark-span">дорогостоящем оборудовании.</span>
-                                Это повышает качество работы более чем в 20 раз.   
-                            </p>
-                        </div>
-                        <div class="col-6 px-0">
-                            <div class="because_item-wrap">
-                                <img src="./img/because-3.png" alt="" class="because_item-img">
+                        <div class="because_list-item row  justify-content-end align-items-center">
+                            <div class="col-5 px-0">
+                                <p class="because_item-title d-block mb-0">а также:</p>
+                                <p class="because_item-desc">
+                                    Потому что у нас есть
+                                    <span class="mark-span">собственный учебный центр.</span>
+                                    Мы повышаем квалификацию своих специалистов,
+                                    приглашая известных профессоров
+                                    и профессионалов стоматологии.  
+                                </p>
+                            </div>
+                            <div class="col-6 px-0">
+                                <div class="because_item-wrap">
+                                    <img src="./img/because-3.png" alt="" class="because_item-img because_item-img-3">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -335,31 +355,26 @@
         <span class="slider_subtitle d-block">
             наших счастливых клиентов
         </span>
-        <div class="slider_row col-12 col-lg-8 mx-auto d-flex flex-column">
+        <div class="slider_row col-12 col-sm-12 col-md-11 col-lg-8 mx-auto d-flex flex-column">
             <div class="slider_row-hidden overflow-hidden">
                 <div class="owl-carousel">
                     <div >
-                        1
                         <img class="owl-adaptive-item" src="/img/slider-item.png" alt="">
                     </div>
                     <div>
-                        2`
                         <img src="/img/slider-item.png" class="owl-adaptive-item" alt="">
                     </div>
                     <div>
-                        3
                         <img src="/img/slider-item.png"  class="owl-adaptive-item" alt="">
                     </div>
                     <div>
-                        4
                         <img src="/img/slider-item.png"  class="owl-adaptive-item" alt="">
                     </div>
                     <div>
-                        5
                         <img src="/img/slider-item.png" class="owl-adaptive-item" alt="">
                     </div>
                 </div>
-                <div class="owl-arrow-container d-none d-lg-block">
+                <div class="owl-arrow-container d-none d-md-block">
     
                 </div>
                 <div class="owl-dots-container">
@@ -372,9 +387,9 @@
     <section class="faq">
         <div class="container">
             <div class="faq_wrap">
-                <h2 class="faq_title text-white">Частые вопросы клиентов</h2>
+                <h2 class="faq_title text-white text-center">Частые вопросы клиентов</h2>
                 <div class="faq_body row d-flex flex-column flex-lg-row justify-content-between">
-                    <div class="faq_left col-12 col-lg-5 flex-column">
+                    <div class="faq_left col-12 col-sm-10 col-md-7 col-lg-5 mx-auto flex-column">
                         <div class="faq_item ">
                             <div class="faq_item-header d-flex justify-content-between align-items-center">
                                 <h3 class="faq_item-title mb-0">Консультация и план лечения бесплатны?</h3>
@@ -424,7 +439,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="faq_right col-10 col-lg-5">
+                    <div class="faq_right col-10 col-sm-9 col-md-6 col-lg-5">
                         <div class="faq_right-cart d-flex flex-column">
                             <h3 class="faq_right-title">
                                 Есть дополнительные вопросы?
@@ -455,7 +470,7 @@
         </div>
     </section>
 
-    <section class="steps">
+    <section class="steps d-none">
         <div class="container">
             <div class="steps_wrap row ">
                 <div class="steps_header">
@@ -556,7 +571,7 @@
                 <h2 class="team_header">
                     Наши врачи
                 </h2>
-                <div class="team_bottom col-12 col-lg-10 mx-auto">
+                <div class="team_bottom col-12 col-sm-8 col-md-7 col-lg-10  mx-auto">
                     <div class="row flex-column flex-lg-row justify-content-between">
                         <div class="team_left d-flex flex-row flex-lg-column col-12 col-lg-4 justify-content-between justify-content-lg-start">
                             <div class="team_left-arrowLeft"></div>
