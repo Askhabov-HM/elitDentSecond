@@ -3,6 +3,8 @@ $(document).ready(function(){
         items: 3,
         loop: true,
         nav: true,
+        navText: ["<div class='owl-prev-arrow'> <div class='arrow-wrap'><img src='./svg/owl-prev-arrow.svg' alt='' class='arrow-left'></div> </div>" , "<div class='owl-next-arrow'>  <div class='arrow-wrap'><img src='./svg/owl-next-arrow.svg' alt='' class='arrow-right'></div></div>" ],
+        
         center: true,
         dots: true,
         dotsEach: true,
