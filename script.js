@@ -31,5 +31,17 @@ $(document).ready(function(){
     });
 
     $('.cocoen').cocoen();
+    
+
+    // END LIBS
+
+    $('.nav_btn').click( function(){
+        $(this).find('.nav_btn-item').toggleClass('animate-nav-item');
+        $('.sidebar').toggleClass('animate-sidebar');
+    })
+
+    $('.faq_item').click( function(){
+        $(this).find('.faq_img-block').toggleClass('animate-faq_item');
+    })
 
   });

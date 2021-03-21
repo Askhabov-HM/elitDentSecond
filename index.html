@@ -47,6 +47,35 @@
         <div class="nav_btn d-xl-none">
             <div class="nav_btn-item"></div>
         </div>
+        <div class="sidebar col-12 col-md-8 col-lg-6 d-xl-none">
+            <div class="sidebar_body ">
+                <nav class="sidebar_nav d-flex flex-column align-items-start">
+                    <a href="" class="sidebar_nav-item">Главная</a>
+                    <a href="" class="sidebar_nav-item">Услуги</a>
+                    <a href="" class="sidebar_nav-item">Акция</a>
+                    <a href="" class="sidebar_nav-item">Врачи</a>
+                    <a href="" class="sidebar_nav-item">Вопросы и ответы</a>
+                    <a href="" class="sidebar_nav-item">Примеры работ</a>
+                    <a href="" class="sidebar_nav-item">Контакты</a>
+                </nav>
+                <div class="sidebar_contacts-block">
+                    <a href="" class="sidebar_phone d-block">+7 (985) 765-09-07</a>
+                    <a href="" class="sidebar_callForm">Заказать обратный звонок</a>
+                </div>
+                <div class="sidebar_media d-flex">
+                    <div class="sidebar_media-item">
+                        <img src="./svg/watsapp-mobile.svg" alt="" class="sidebar_media-icon"></div>
+                    <div class="sidebar_media-item">
+                        <img src="./svg/faceebook-mobile.svg" alt="" class="sidebar_media-icon"></div>
+                    <div class="sidebar_media-item">
+                        <img src="./svg/vk-mobile.svg" alt="" class="sidebar_media-icon"></div>
+                    <div class="sidebar_media-item">
+                        <img src="./svg/inst-mobile.svg" alt="" class="sidebar_media-icon"></div>
+                </div>
+            </div>
+            <div class="sidebar_bottom-block">
+            </div>
+        </div>
     </header>
     
     <section class="plan">
@@ -90,7 +119,7 @@
                 </span>
             </div>
             <div class="gift_bottom">
-                <div class="gift_slider cocoen">
+                <div class="gift_slider mx-auto cocoen">
                     <img src="./img/swipe-before.png" alt="" class="gift_slider-img">
                     <img src="./img/swipe-after.png" alt="" class="gift_slider-img">
                 </div>
@@ -106,11 +135,11 @@
     </section>
     
     <section class="service">
-        <div class="container">
+        <div class="container col-12 col-sm-10 col-md-9 col-lg-12">
             <h2 class="service_title">
                 Все наши услуги
             </h2>
-            <div class="service_wrap col-12 col-lg-9 mx-auto d-flex flex-wrap justify-content-center">
+            <div class="service_wrap col-12 col-sm-8 col-md-6 col-lg-9  mx-auto d-flex flex-wrap justify-content-center">
                 <div class="service_item col-6 col-lg-4">
                     <div class="service_item-block d-flex justify-content-center align-items-center">
                         <img src="./svg/product-1.svg" alt="" class="service_item-img">
@@ -206,7 +235,7 @@
                 </div>
             </div>
 
-            <div class="service_img-wrap col-12">
+            <div class="service_img-wrap col-sm-8 col-md-6 col-lg-9 mx-auto">
                 <img src="./img/consult.png" alt="" class="service_img w-100 d-lg-none">
             </div>
         </div>
@@ -273,7 +302,7 @@
                 </div>
             </div>
         </div>
-        <div class="consult_scalp-block d-md-none">
+        <div class="consult_scalp-block  d-md-none">
             <img src="./img/consult-scalpe.png" alt="" class="consult_scalp-img">
         </div>
     </section>
@@ -304,18 +333,20 @@
                         <div class="because_list-item row flex-row-reverse justify-content-start align-items-center">
                             <div class="col-6 px-0">
                                 <p class="because_item-title d-block mb-0" style="text-align: right;"> из-за того, что:</p>
-                                <p class="because_item-desc" style='text-align: right;'>
-                                    <span class="mark-span">
-                                        У нас фиксированные цены.
-                                    </span>
-                                    В нашей клинике
-                                    невозможно такое,
-                                    что один пациент
-                                    лечитсяна одну сумму,
-                                    а второй на другую при
-                                    одинаковых видах услуг.
-    
-                                </p>
+                                <div class="becasuse_desc-block d-flex justify-content-end col-11">
+                                    <p class="because_item-desc" style='text-align: right;'>
+                                        <span class="mark-span">
+                                            У нас фиксированные цены.
+                                        </span>
+                                        В нашей клинике
+                                        невозможно такое,
+                                        что один пациент
+                                        лечится на одну сумму,
+                                        а второй на другую при
+                                        одинаковых видах услуг.
+        
+                                    </p>
+                                </div>
                             </div>
                             <div class="col-6 px-0 d-flex justify-content-start">
                                 <div class="because_item-wrap">
@@ -383,61 +414,108 @@
             </div>
         </div>
     </section>
-
     <section class="faq">
         <div class="container">
             <div class="faq_wrap">
                 <h2 class="faq_title text-white text-center">Частые вопросы клиентов</h2>
                 <div class="faq_body row d-flex flex-column flex-lg-row justify-content-between">
                     <div class="faq_left col-12 col-sm-10 col-md-7 col-lg-5 mx-auto flex-column">
-                        <div class="faq_item ">
-                            <div class="faq_item-header d-flex justify-content-between align-items-center">
-                                <h3 class="faq_item-title mb-0">Консультация и план лечения бесплатны?</h3>
-                                <div class="faq_img-block d-flex align-items-center justify-content-center">
-                                    <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
+                        <a class="faq_item-link" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="faq_item">
+                                <div class="faq_item-header d-flex justify-content-between align-items-center">
+                                    <h3 class="faq_item-title mb-0">Консультация и план лечения бесплатны?</h3>
+                                    <div class="faq_img-block d-flex align-items-center justify-content-center">
+                                        <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
+                                    </div>
+                                </div>
+                                <div class="collapse faq_item-desc" id="collapse1">
+                                    Равным образом рамки и место обучения кадров позволяет
+                                    оценить значение модели развития. Не следует,
+                                    однако забывать, что рамки и место обучения кадров влечет
+                                    за собой процесс внедрения новых предложений.
                                 </div>
                             </div>
-                        </div>
-                        <div class="faq_item ">
-                            <div class="faq_item-header d-flex justify-content-between align-items-center">
-                                <h3 class="faq_item-title mb-0">Как вы соблюдаете стерильность?</h3>
-                                <div class="faq_img-block d-flex align-items-center justify-content-center">
-                                    <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
+                        </a>
+                        <a class="faq_item-link" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="faq_item ">
+                                <div class="faq_item-header d-flex justify-content-between align-items-center">
+                                    <h3 class="faq_item-title mb-0">Как вы соблюдаете стерильность?</h3>
+                                    <div class="faq_img-block d-flex align-items-center justify-content-center">
+                                        <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
+                                    </div>
+                                </div>
+                                <div class="collapse faq_item-desc" id="collapse2">
+                                    Равным образом рамки и место обучения кадров позволяет
+                                    оценить значение модели развития. Не следует,
+                                    однако забывать, что рамки и место обучения кадров влечет
+                                    за собой процесс внедрения новых предложений.
                                 </div>
                             </div>
-                        </div>
-                        <div class="faq_item">
-                            <div class="faq_item-header d-flex justify-content-between align-items-center">
-                                <h3 class="faq_item-title mb-0">Как вы устраняете боль?</h3>
-                                <div class="faq_img-block d-flex align-items-center justify-content-center">
-                                    <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
+                        </a>
+                        <a class="faq_item-link" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="faq_item">
+                                <div class="faq_item-header d-flex justify-content-between align-items-center">
+                                    <h3 class="faq_item-title mb-0">Как вы устраняете боль?</h3>
+                                    <div class="faq_img-block d-flex align-items-center justify-content-center">
+                                        <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
+                                    </div>
+                                </div>
+                                <div class="collapse faq_item-desc" id="collapse3">
+                                    Равным образом рамки и место обучения кадров позволяет
+                                    оценить значение модели развития. Не следует,
+                                    однако забывать, что рамки и место обучения кадров влечет
+                                    за собой процесс внедрения новых предложений.
                                 </div>
                             </div>
-                        </div>
-                        <div class="faq_item">
-                            <div class="faq_item-header d-flex justify-content-between align-items-center">
-                                <h3 class="faq_item-title mb-0">У вас опытные врачи?</h3>
-                                <div class="faq_img-block d-flex align-items-center justify-content-center">
-                                    <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
+                        </a>
+                        <a class="faq_item-link" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="faq_item">
+                                <div class="faq_item-header d-flex justify-content-between align-items-center">
+                                    <h3 class="faq_item-title mb-0">У вас опытные врачи?</h3>
+                                    <div class="faq_img-block d-flex align-items-center justify-content-center">
+                                        <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
+                                    </div>
+                                </div>
+                                <div class="collapse faq_item-desc" id="collapse4">
+                                    Равным образом рамки и место обучения кадров позволяет
+                                    оценить значение модели развития. Не следует,
+                                    однако забывать, что рамки и место обучения кадров влечет
+                                    за собой процесс внедрения новых предложений.
                                 </div>
                             </div>
-                        </div>
-                        <div class="faq_item">
-                            <div class="faq_item-header d-flex justify-content-between align-items-center">
-                                <h3 class="faq_item-title mb-0">А с детьми вы работаете?</h3>
-                                <div class="faq_img-block d-flex align-items-center justify-content-center">
-                                    <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
+                        </a>
+                        <a class="faq_item-link" data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="faq_item">
+                                <div class="faq_item-header d-flex justify-content-between align-items-center">
+                                    <h3 class="faq_item-title mb-0">А с детьми вы работаете?</h3>
+                                    <div class="faq_img-block d-flex align-items-center justify-content-center">
+                                        <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
+                                    </div>
+                                </div>
+                                <div class="collapse faq_item-desc" id="collapse5">
+                                    Равным образом рамки и место обучения кадров позволяет
+                                    оценить значение модели развития. Не следует,
+                                    однако забывать, что рамки и место обучения кадров влечет
+                                    за собой процесс внедрения новых предложений.
                                 </div>
                             </div>
-                        </div>
-                        <div class="faq_item">
-                            <div class="faq_item-header d-flex justify-content-between align-items-center">
-                                <h3 class="faq_item-title mb-0">А даёте ли вы какие-нибудь гарантии?</h3>
-                                <div class="faq_img-block d-flex align-items-center justify-content-center">
-                                    <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
+                        </a>
+                        <a class="faq_item-link" data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="faq_item">
+                                <div class="faq_item-header d-flex justify-content-between align-items-center">
+                                    <h3 class="faq_item-title mb-0">А даёте ли вы какие-нибудь гарантии?</h3>
+                                    <div class="faq_img-block d-flex align-items-center justify-content-center">
+                                        <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
+                                    </div>
+                                </div>
+                                <div class="collapse faq_item-desc" id="collapse6">
+                                    Равным образом рамки и место обучения кадров позволяет
+                                    оценить значение модели развития. Не следует,
+                                    однако забывать, что рамки и место обучения кадров влечет
+                                    за собой процесс внедрения новых предложений.
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="faq_right col-10 col-sm-9 col-md-6 col-lg-5">
                         <div class="faq_right-cart d-flex flex-column">
@@ -470,7 +548,7 @@
         </div>
     </section>
 
-    <section class="steps d-none">
+    <section class="steps">
         <div class="container">
             <div class="steps_wrap row ">
                 <div class="steps_header">
@@ -640,27 +718,29 @@
             </span>
         </div>
         <div class="locate_wrap">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6677e6cbfb3d185729dc0b2d1a91d2481c7cb2b73c6c89ec56689ccacbf0eaf7&amp;width=100%25&amp;height=650&amp;lang=ru_RU&amp;scroll=true"></script>
+            <div class="locate_block border col-11 mx-auto col-sm-auto ">
+                <div class="locate_block-img mx-auto">
+                    <img src="./img/locate.png" alt="" class="locate_img">
+                </div>
+                <div class="locate_desc">
+                    <span class="locate_desc-top d-block">Адрес:</span>
+                    <p class="locate_desc-middle">
+                        г. Москва, <br>
+                        <span class="mark-span">
+                            ул, Большая Филевская, 25
+                        </span>
+                    </p>
+                    <div class="button-genereal-wrap ">
+                        <a href="#" class="locate_desc-btn button-general">
+                            Записаться на приём
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="locate_block bg-secondary col-11 mx-auto col-lg-auto ">
-                        <div class="locate_block-img mx-auto">
-                            <img src="./img/locate.png" alt="" class="locate_img">
-                        </div>
-                        <div class="locate_desc">
-                            <span class="locate_desc-top d-block">Адрес:</span>
-                            <p class="locate_desc-middle">
-                                г. Москва, <br>
-                                <span class="mark-span">
-                                    ул, Большая Филевская, 25
-                                </span>
-                            </p>
-                            <div class="button-genereal-wrap ">
-                                <a href="#" class="locate_desc-btn button-general">
-                                    Записаться на приём
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -770,8 +850,9 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
     <script src="owl/owl.carousel.js"></script>
     <script src="./cocoen/js/cocoen.min.js"></script>
     <script src="./cocoen/js/cocoen-jquery.min.js"></script>
