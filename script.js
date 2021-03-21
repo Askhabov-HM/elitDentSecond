@@ -33,7 +33,17 @@ $(document).ready(function(){
     });
 
     $('.cocoen').cocoen();
+
+    $(".team_slider-wrap").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+    });
     
+    $('.team_left-item').click( function(e){
+        let dataId = $(this).data('id')
+        $('.team_slider-wrap').slick('slickGoTo', dataId);
+    });
 
     // END LIBS
 

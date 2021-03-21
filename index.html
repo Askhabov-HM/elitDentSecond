@@ -14,6 +14,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css"
     />
     <link rel="stylesheet" href="./cocoen/css/cocoen.min.css">
+    <link rel="stylesheet" href="./slick/slick.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -567,8 +568,8 @@
                                 <div class="steps_line-leftDent">
                                     <img src="./img/steps-bad-dent.png" alt="" class="steps_leftDent">
                                 </div>
-                                <img src="./svg/steps-line.svg" alt="" class="steps_line-img d-none d-lg-block">
-                                <img src="./svg/adaptive-line.svg" alt="" class="steps_line-imgMobile d-lg-none">
+                                <img src="./svg/steps-line.svg" alt="" class="steps_line-img d-none d-md-block mx-auto">
+                                <img src="./svg/adaptive-line.svg" alt="" class="steps_line-imgMobile d-md-none">
                                 <div class="rings-row row">
                                     <div class="ring_wrap wrap-1 px-0">
                                         <div class="ring ring-1">
@@ -656,25 +657,25 @@
                     <div class="row flex-column flex-lg-row justify-content-between">
                         <div class="team_left d-flex flex-row flex-lg-column col-12 col-lg-4 justify-content-between justify-content-lg-start">
                             <div class="team_left-arrowLeft"></div>
-                            <div class="team_left-item">
+                            <div class="team_left-item" data-id='0'>
                                 <div class="team_left-round">
                                     <img src="./img/team-1-1.png" alt="" class="team_left-img team_left-img-1">
                                 </div>
                                 <p class="team_left-desc d-none d-lg-block">Имя Фамилия</p>
                             </div>
-                            <div class="team_left-item">
+                            <div class="team_left-item" data-id='1'>
                                 <div class="team_left-round">
                                     <img src="./img/team-2-1.png" alt="" class="team_left-img team_left-img-2">
                                 </div>
                                 <p class="team_left-desc d-none d-lg-block">Зелим Хаманаев</p>
                             </div>
-                            <div class="team_left-item">
+                            <div class="team_left-item" data-id='2'>
                                 <div class="team_left-round">
                                     <img src="./img/team-3-1.png" alt="" class="team_left-img team_left-img-3">
                                 </div>
                                 <p class="team_left-desc d-none d-lg-block">Имя Фамилия</p>
                             </div>
-                            <div class="team_left-item">
+                            <div class="team_left-item" data-id='3'>
                                 <div class="team_left-round">
                                     <img src="./img/team-4-1.png" alt="" class="team_left-img  team_left-img-4">
                                 </div>
@@ -688,9 +689,25 @@
                                 <div class="team_right-leftBlock">
                                     <img src="./svg/left-arrow.svg" alt="" class="team_right-rowLeft d-lg-none">
                                 </div>
-                                <img src="./img/team-4-2.png" alt="" class="team_right-img d-none d-lg-block">
-                                <img src="./img/team-4-a.png" alt="" class="team_right-img d-lg-none">
-
+                                <div class="team_slider-wrap">
+                                    <div class="team_slider-item">
+                                        <img src="./img/team-2.png" alt="" class="team_right-img d-none d-lg-block">
+                                        <img src="./img/team-2-a.png" alt="" class="team_right-img d-lg-none">
+                                    </div>
+                                    <div class="team_slider-item">
+                                        <img src="./img/team-4-2.png" alt="" class="team_right-img d-none d-lg-block">
+                                        <img src="./img/team-4-a.png" alt="" class="team_right-img d-lg-none">
+                                    </div>
+                                    <div class="team_slider-item">
+                                        <img src="./img/team-4-2.png" alt="" class="team_right-img d-none d-lg-block">
+                                        <img src="./img/team-4-a.png" alt="" class="team_right-img d-lg-none">
+                                    </div>
+                                    <div class="team_slider-item">
+                                        <img src="./img/team-4-2.png" alt="" class="team_right-img d-none d-lg-block">
+                                        <img src="./img/team-4-a.png" alt="" class="team_right-img d-lg-none">
+                                    </div>
+                                </div>
+                                
                                 <div class="team_right-rightBlock">
                                     <img src="./svg/left-arrow.svg" alt="" class="team_right-rowRight d-lg-none">
                                 </div>
@@ -859,6 +876,7 @@
     <script src="owl/owl.carousel.js"></script>
     <script src="./cocoen/js/cocoen.min.js"></script>
     <script src="./cocoen/js/cocoen-jquery.min.js"></script>
+    <script src="./slick/slick.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
