@@ -1043,26 +1043,6 @@ body {
     position: absolute;
 }
 
-.wrap-1 {
-    transform: translate(-45%, 19%);
-}
-
-.wrap-2 {
-    transform: translate(58%, -14%);
-    z-index: 1000;
-}
-
-.wrap-3 {
-    transform: translate(165%, 3%);
-}
-
-.wrap-4 {
-    transform: translate(322%, 37%);
-}
-
-.wrap-5 {
-    transform: translate(476%, 2%);
-}
 
 
 .ring-desc {
@@ -1406,17 +1386,14 @@ body {
 
 /* MEDIAQUERY */
 
-@media (min-width: 1920px){
-    .service_scalp-block{
-        position: absolute;
-        bottom: -15%;
-        right: 0;
-        content: '';
-    }
-}
 
-@media (max-width: 1920px){
+@media (max-width: 1919.98px){
+    .container {
+        max-width: 1200px;
+    }
+
     .service_scalp-block {
+        display: block;
         position: absolute;
         bottom: -13%;
         right: 0%;
@@ -1438,15 +1415,6 @@ body {
     }
 }
 
-
-@media (max-width: 1450px) {
-    .container {
-        max-width: 1200px;
-    }
-
-    
-    
-}
 
 @media (min-width: 1439.98px){
     .header {
@@ -1487,9 +1455,6 @@ body {
 
 
 @media (max-width: 1199.98px){
-
-
-    
 
     .sidebar_nav-item{
         font-size: 16px;
@@ -1999,11 +1964,6 @@ body {
 
     
 
-    
-
-    
-
-    
 
     
     .ring-white {
@@ -2331,16 +2291,7 @@ body {
         margin-top: 64px;
     }
 
-    .steps_img-block {
-        max-width: 120px;
-        transform: translateY(0%);
-        bottom: 12%;
-        right: 0%;
-    }
-
-    .steps_img{
-        transform: scale(1,1);
-    }
+   
 
     .because_list-item:nth-child(2) .because_item-title{
         padding-right: 10px;
@@ -2396,13 +2347,27 @@ body {
     
 }
 
+
+@media (min-width: 320px) and (max-width: 767.98px){
+
+    .steps_img-block {
+        max-width: 120px;
+        transform: translateY(0%);
+        bottom: 12%;
+        right: 0%;
+    }
+
+    .steps_img{
+        transform: scale(1,1);
+    }
+
+}
+
 @media (min-width: 768px) {
 
 
     .steps_img-block{
-        left: -50px;
-        top: 56%;
-        transform: translateY(-50%);
+        display: none;
     }
     
     
@@ -2427,7 +2392,69 @@ body {
 }
 
 
-@media (min-width: 991.98px){
+@media (min-width: 991.98px) and (max-width: 1199.98px){
+
+    .steps-media-width{
+        max-width: 768px;
+    }
+    .ring-desc {
+        font-size: 18px;
+    }
+
+    .steps_leftDent, .steps_rightDent{
+        width: 100%;
+    }
+
+    .steps_line-leftDent {
+        top: 5px;
+        left: -37px;
+        width: 35px;
+    }
+
+    .steps_line-rightDent {
+        top: -53px;
+        right: -102px;
+        width: 100px;
+    }
+
+    .wrap-1 {
+        transform: translate(-45%, 24%);
+    }
+
+    .wrap-2 {
+        transform: translate(49%, 3%);
+        z-index: 1000;
+    }
+
+    .wrap-3 {
+        transform: translate(165%, 26%);
+    }
+
+    .wrap-4 {
+        transform: translate(246%, 44%);
+    }
+
+    .wrap-5 {
+        transform: translate(328%, 8%);
+    }
+    
+    .ring-white-4 {
+        width: 11px;
+        height: 11px;
+        transform: translateY(9px);
+    }
+
+    .ring-white-5 {
+        width: 11px;
+        height: 11px;
+        transform: translateY(15px);
+    }
+
+    .steps_img-block {
+        display: none;
+    }
+
+
     .sidebar {
         margin-top: 83px;
     }
@@ -2438,6 +2465,72 @@ body {
 
     .locate_wrap {
         margin-bottom: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .steps_img-block{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px){
+    
+    .steps-media-width{
+        max-width: 1200px;
+    }
+
+    .steps_img-block{
+        display: none;
+    }
+    
+    .wrap-1 {
+        transform: translate(-45%, 19%);
+    }
+
+    .wrap-2 {
+        transform: translate(61%, -7%);
+        z-index: 1000;
+    }
+
+    .wrap-3 {
+        transform: translate(165%, 7%);
+    }
+
+    .wrap-4 {
+        transform: translate(313%, 41%);
+    }
+
+    .wrap-5 {
+        transform: translate(429%, 4%);
+    }
+
+}
+
+
+@media (min-width: 1450px){
+
+}
+
+
+@media (min-width: 1920px){
+    .service_scalp-block{
+        position: absolute;
+        bottom: -15%;
+        right: 0;
+        content: '';
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+
+    .steps_img-block {
+        max-width: 400px;
+        display: block;
+        left: -20px;
+        top: 130px;
     }
 
 }
