@@ -21,26 +21,28 @@
     <header class="header d-flex justify-content-between align-items-center">
         <div class="header_logoblock d-flex align-items-center">
             <div class="header_logoblock-img">
-                <img src="./img/logo.png" alt="" class="header_logo-img">
+                <a href="#plan">
+                    <img src="./img/logo.png" alt="" class="header_logo-img">
+                </a>
             </div>
             <p class="header_logo-desc mb-0">Сеть <br class="d-none"> 
                 стоматологических
                 клиник в Москве</p>
         </div>
         <nav class="nav d-none d-xl-flex justify-content-between">
-            <a href="" class="nav_item">Главная</a>
-            <a href="" class="nav_item">Услуги</a>
-            <a href="" class="nav_item">Акция</a>
-            <a href="" class="nav_item">Врачи</a>
-            <a href="" class="nav_item">Вопросы и ответы</a>
-            <a href="" class="nav_item">Примеры работ</a>
-            <a href="" class="nav_item">Контакты</a>
+            <a href="#plan" class="nav_item">Главная</a>
+            <a href="#service" class="nav_item">Услуги</a>
+            <a href="#gift" class="nav_item">Акция</a>
+            <a href="#team" class="nav_item">Врачи</a>
+            <a href="#faq" class="nav_item">Вопросы и ответы</a>
+            <a href="#slider" class="nav_item">Примеры работ</a>
+            <a href="#footer" class="nav_item">Контакты</a>
         </nav>
         <div class="header_contact d-none d-xl-flex align-items-center">
             <div class="header_contact-imgWrap">
                 <img src="./svg/logo-phone.svg" alt="" class="header_contact-img">
             </div>
-            <div class="header_contact-block">
+            <div class="header_contact-block" role='button'>
                 <span class="header_contact-phone d-block">+7 (985) 765-09-07</span>
                 <span class="header_contact-sub d-block">Заказать бесплатный звонок</span>
             </div>
@@ -51,13 +53,13 @@
         <div class="sidebar col-12 col-md-8 col-lg-6 d-xl-none">
             <div class="sidebar_body ">
                 <nav class="sidebar_nav d-flex flex-column align-items-start">
-                    <a href="" class="sidebar_nav-item">Главная</a>
-                    <a href="" class="sidebar_nav-item">Услуги</a>
-                    <a href="" class="sidebar_nav-item">Акция</a>
-                    <a href="" class="sidebar_nav-item">Врачи</a>
-                    <a href="" class="sidebar_nav-item">Вопросы и ответы</a>
-                    <a href="" class="sidebar_nav-item">Примеры работ</a>
-                    <a href="" class="sidebar_nav-item">Контакты</a>
+                    <a href="#plan" class="sidebar_nav-item">Главная</a>
+                    <a href="#service" class="sidebar_nav-item">Услуги</a>
+                    <a href="#gift" class="sidebar_nav-item">Акция</a>
+                    <a href="#team" class="sidebar_nav-item">Врачи</a>
+                    <a href="#faq" class="sidebar_nav-item">Вопросы и ответы</a>
+                    <a href="#slider" class="sidebar_nav-item">Примеры работ</a>
+                    <a href="#footer" class="sidebar_nav-item">Контакты</a>
                 </nav>
                 <div class="sidebar_contacts-block">
                     <a href="" class="sidebar_phone d-block">+7 (985) 765-09-07</a>
@@ -79,7 +81,7 @@
         </div>
     </header>
     
-    <section class="plan">
+    <section id='plan' class="plan">
         <div class="container">
             <div class="plan_container row flex-column flex-md-row justify-content-center align-items-center align-items-lg-stretch">
                 <div class="plan_left col-12 col-lg-5 offset-xl-1">
@@ -108,7 +110,7 @@
         </div>
     </section>
 
-    <section class="gift">
+    <section id='gift' class="gift">
         <div class="container">
             <div class="gift_top">
                 <h2 class="gift_header">
@@ -135,7 +137,7 @@
         </div>
     </section>
     
-    <section class="service">
+    <section id='service' class="service">
         <div class="container col-12 col-sm-10 col-md-9 col-lg-12">
             <h2 class="service_title">
                 Все наши услуги
@@ -245,7 +247,7 @@
         </div>
     </section>
     
-    <section class="consult col-12 col-sm-8 col-md-8 col-lg-12 mx-auto overflow-hidden">
+    <section id='consult' class="consult col-12 col-sm-8 col-md-8 col-lg-12 mx-auto overflow-hidden">
         <div class="container">
             <div class="consult_wrap col-10 mx-auto">
                 <div class="consult_top ">
@@ -378,7 +380,7 @@
         </div>
     </section>
 
-    <section class="slider">
+    <section id='slider' class="slider">
         <h2 class="slider_title">
             <span class="mark-span">
                 Здоровые зубы <br class="d-lg-none"> и красивые улыбки
@@ -390,19 +392,19 @@
         <div class="slider_row col-12 col-sm-12 col-md-11 col-lg-8 mx-auto d-flex flex-column">
             <div class="slider_row-hidden overflow-hidden">
                 <div class="owl-carousel">
-                    <div >
-                        <img class="owl-adaptive-item" src="/img/slider-item.png" alt="">
+                    <div class="animated fadeInRight delay-2s">
+                        <img class="owl-adaptive-item " src="/img/slider-item.png" alt="">
                     </div>
-                    <div>
+                    <div class="animated fadeInRight delay-2s">
                         <img src="/img/slider-item.png" class="owl-adaptive-item" alt="">
                     </div>
-                    <div>
+                    <div class="animated fadeInRight delay-2s">
                         <img src="/img/slider-item.png"  class="owl-adaptive-item" alt="">
                     </div>
-                    <div>
+                    <div class="animated fadeInRight delay-2s">
                         <img src="/img/slider-item.png"  class="owl-adaptive-item" alt="">
                     </div>
-                    <div>
+                    <div class="animated fadeInRight delay-2s">
                         <img src="/img/slider-item.png" class="owl-adaptive-item" alt="">
                     </div>
                 </div>
@@ -415,7 +417,7 @@
             </div>
         </div>
     </section>
-    <section class="faq">
+    <section id='faq' class="faq">
         <div class="container">
             <div class="faq_wrap">
                 <h2 class="faq_title text-white text-center">Частые вопросы клиентов</h2>
@@ -647,41 +649,44 @@
         </div>
     </section>
 
-    <section class="team">
+    <section id='team' class="team">
         <div class="container">
             <div class="team_wrap row">
                 <h2 class="team_header">
                     Наши врачи
                 </h2>
-                <div class="team_bottom col-12 col-sm-8 col-md-7 col-lg-10  mx-auto">
-                    <div class="row flex-column flex-lg-row justify-content-between">
+                <div class="team_bottom  col-12 col-sm-8 col-md-7 col-lg-10  mx-auto">
+                    <div class="row flex-column flex-lg-row justify-content-between align-items-lg-start">
                         <div class="team_left d-flex flex-row flex-lg-column col-12 col-lg-4 justify-content-between justify-content-lg-start">
-                            <div class="team_left-arrowLeft"></div>
-                            <div class="team_left-item" data-id='0'>
+                            <div class="team_left-arrowLeft" role='button'>
+                                <img src="./svg/up-arrow-teamSlider.svg" alt="" class="team_right-rowLeft d-none d-lg-block">
+                            </div>
+                            <div class="team_left-item" role='button' data-id='0'>
                                 <div class="team_left-round">
                                     <img src="./img/team-1-1.png" alt="" class="team_left-img team_left-img-1">
                                 </div>
                                 <p class="team_left-desc d-none d-lg-block">Имя Фамилия</p>
                             </div>
-                            <div class="team_left-item" data-id='1'>
+                            <div class="team_left-item" role='button'  data-id='1'>
                                 <div class="team_left-round">
                                     <img src="./img/team-2-1.png" alt="" class="team_left-img team_left-img-2">
                                 </div>
                                 <p class="team_left-desc d-none d-lg-block">Зелим Хаманаев</p>
                             </div>
-                            <div class="team_left-item" data-id='2'>
+                            <div class="team_left-item" role='button'  data-id='2'>
                                 <div class="team_left-round">
                                     <img src="./img/team-3-1.png" alt="" class="team_left-img team_left-img-3">
                                 </div>
                                 <p class="team_left-desc d-none d-lg-block">Имя Фамилия</p>
                             </div>
-                            <div class="team_left-item" data-id='3'>
+                            <div class="team_left-item" role='button'  data-id='3'>
                                 <div class="team_left-round">
                                     <img src="./img/team-4-1.png" alt="" class="team_left-img  team_left-img-4">
                                 </div>
                                 <p class="team_left-desc d-none d-lg-block">Имя Фамилия</p>
                             </div>
-                            <div class="team_left-arrowRigth">
+                            <div class="team_left-arrowRight" role='button'>
+                                <img src="./svg/up-arrow-teamSlider.svg" alt="" class="team_right-rowRight d-none d-lg-block">
                             </div>
                         </div>
                         <div class="team_right d-flex flex-column col-12 col-lg-6 ml-auto">
@@ -690,19 +695,19 @@
                                     <img src="./svg/left-arrow.svg" alt="" class="team_right-rowLeft d-lg-none">
                                 </div>
                                 <div class="team_slider-wrap">
-                                    <div class="team_slider-item">
+                                    <div class="team_slider-item d-flex mx-auto">
                                         <img src="./img/team-1.png" alt="" class="team_right-img d-none d-lg-block">
                                         <img src="./img/team-1-a.png" alt="" class="team_right-img d-lg-none">
                                     </div>
-                                    <div class="team_slider-item">
+                                    <div class="team_slider-item d-flex mx-auto">
                                         <img src="./img/team-2.png" alt="" class="team_right-img d-none d-lg-block">
                                         <img src="./img/team-2-a.png" alt="" class="team_right-img d-lg-none">
                                     </div>
-                                    <div class="team_slider-item">
+                                    <div class="team_slider-item d-flex mx-auto">
                                         <img src="./img/team-3.png" alt="" class="team_right-img d-none d-lg-block">
                                         <img src="./img/team-3-a.png" alt="" class="team_right-img d-lg-none">
                                     </div>
-                                    <div class="team_slider-item">
+                                    <div class="team_slider-item d-flex mx-auto">
                                         <img src="./img/team-4-2.png" alt="" class="team_right-img d-none d-lg-block">
                                         <img src="./img/team-4-a.png" alt="" class="team_right-img d-lg-none">
                                     </div>
@@ -772,8 +777,8 @@
                 <img src="./img/call-form.png" alt="" class="call-fly-img">
             </div>
             <div class="row flex-lg-row-reverse align-items-center">
-                <div class="call_left col-11 mx-auto col-lg-5 order-1">
-                    <h2 class="call_left-title mark-span col-7 col-md-7">Узнать цены <br class="d-sm-none"> и сроки,
+                <div class="call_left col-11 col-sm-9 col-md-7  mx-auto col-lg-5 order-1">
+                    <h2 class="call_left-title mark-span col-7 col-sm-9 col-md-10">Узнать цены <br class="d-sm-none"> и сроки,
                         получить консультацию
                         и записаться на приём</h2>
                     <p class="call_left-subtitle">Вы можете, заказав <br class="d-lg-none"> <b class="text-capitalize">БЕСПЛАТНЫЙ</b> звонок</p>
@@ -794,23 +799,23 @@
         </div>
     </section>
 
-    <footer class="footer text-white">
+    <footer id='footer' class="footer text-white">
         <div class="container">
-            <div class="footer_wrap row ">
-                <p class="footer_phone text-white text-center d-block d-lg-none">
+            <div class="footer_wrap row " 
+                <p class="footer_phone text-white text-center d-block d-lg-none" role='button'>
                     +7 (985) 765-09-07
                 </p>
                 <div class="footer_media-wrap d-flex d-lg-none justify-content-center">
-                    <div class="footer_media-item">
+                    <div class="footer_media-item" role='button'>
                         <img src="./svg/whatsapp.svg" alt="" class="footer_media-img">
                     </div>
-                    <div class="footer_media-item">
+                    <div class="footer_media-item" role='button'>
                         <img src="./svg/facebook.svg" alt="" class="footer_media-img">
                     </div>
-                    <div class="footer_media-item">
+                    <div class="footer_media-item" role='button'>
                         <img src="./svg/vkontakte.svg" alt="" class="footer_media-img">
                     </div>
-                    <div class="footer_media-item">
+                    <div class="footer_media-item" role='button'>
                         <img src="./svg/inst.svg" alt="" class="footer_media-img">
                     </div>
                 </div>

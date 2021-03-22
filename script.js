@@ -38,7 +38,25 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
-        arrows: false,
+        arrows: true,
+        prevArrow: '.team_right-leftBlock',
+        nextArrow: '.team_right-rightBlock',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                  prevArrow: '.team_right-leftBlock',
+                  nextArrow: '.team_right-rightBlock',
+                }
+              },
+            {
+              breakpoint: 1920,
+              settings: {
+                prevArrow: '.team_left-arrowLeft',
+                nextArrow: '.team_left-arrowRight',
+              }
+            },
+        ]
     });
     
     $('.team_left-item').click( function(e){
