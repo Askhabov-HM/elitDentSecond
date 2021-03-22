@@ -41,6 +41,7 @@ $(document).ready(function(){
         arrows: true,
         prevArrow: '.team_right-leftBlock',
         nextArrow: '.team_right-rightBlock',
+        asNavFor: '.team_desc-sliderWrap',
         responsive: [
             {
                 breakpoint: 992,
@@ -64,6 +65,16 @@ $(document).ready(function(){
         $('.team_slider-wrap').slick('slickGoTo', dataId);
     });
 
+
+    $('.team_desc-sliderWrap').slick({
+        slidesToShow: 1,
+        draggable:false,
+        dots: false,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.team_slider-wrap'
+    })
+
     // END LIBS
 
     $('.nav_btn').click( function(){
@@ -73,6 +84,17 @@ $(document).ready(function(){
 
     $('.faq_item').click( function(){
         $(this).find('.faq_img-block').toggleClass('animate-faq_item');
+    })
+
+    $('.openModal').click( function(e){
+        let self = e.target;
+        let dataTitle = $(self).data('title');
+        let dataDesc = $(self).data('desc');
+        let dataBtnText = $(self).data('text');
+
+        $('.modal_title').text(dataTitle);
+        $('.modal_desc').text(dataDesc)
+        $('.submitBtn').text(dataBtnText)
     })
 
   });

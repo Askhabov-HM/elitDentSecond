@@ -43,7 +43,11 @@
                 <img src="./svg/logo-phone.svg" alt="" class="header_contact-img">
             </div>
             <div class="header_contact-block" role='button'>
-                <span class="header_contact-phone d-block">+7 (985) 765-09-07</span>
+                <span class="header_contact-phone d-block">
+                    <span class="mark-span">
+                        +7 (985) 765-09-07
+                    </span>
+                </span>
                 <span class="header_contact-sub d-block">Заказать бесплатный звонок</span>
             </div>
         </div>
@@ -62,7 +66,11 @@
                     <a href="#footer" class="sidebar_nav-item">Контакты</a>
                 </nav>
                 <div class="sidebar_contacts-block">
-                    <a href="" class="sidebar_phone d-block">+7 (985) 765-09-07</a>
+                    <a href="" class="sidebar_phone d-block">
+                        <div class="mark-span">
+                            +7 (985) 765-09-07
+                        </div>
+                    </a>
                     <a href="" class="sidebar_callForm">Заказать обратный звонок</a>
                 </div>
                 <div class="sidebar_media d-flex">
@@ -101,7 +109,7 @@
                         </p>
                     </div>
                     <div class="button-genereal-wrap text-center">
-                        <a href="#" class="button-general">
+                        <a href="#" class="button-general openModal" data-toggle="modal" data-target="#modal" data-title='Узнать сроки и цены' data-desc='Заполните форму, чтобы узнать сроки и цены' data-text='Узнать сроки и цены'>
                             Узнать сроки и цены
                         </a>
                     </div>
@@ -114,8 +122,8 @@
         <div class="container">
             <div class="gift_top">
                 <h2 class="gift_header">
-                    <span class="mark-span"> В подарок </span>
-                    гигиеническая чистка<br>
+                    <span class="mark-span"> В подарок </span><br class="d-lg-none">
+                    гигиеническая чистка
                 </h2>
                 <span class="gift_subtitle">
                     при прохождении комплексного лечения
@@ -251,17 +259,23 @@
         <div class="container">
             <div class="consult_wrap col-10 mx-auto">
                 <div class="consult_top ">
-                    <h2 class="consult_title">
+                    <h2 class="consult_title d-none d-lg-block">
                         <span class="mark-span"> А какие у вас</span>
                         проблемы с зубами?
                     </h2>
-                    <span class="hide-span consult_subtitle">
+                    <h2 class="consult_title d-lg-none">
+                        А какие у вас
+                        <span class="mark-span">
+                            проблемы с зубами?
+                        </span>
+                    </h2>
+                    <span class="hide-span consult_subtitle d-none d-lg-block">
                         проконсультируйтесь с 
                         <span class="mark-span">
                             практикующим стоматологом
                         </span>
                     </span>
-                    <span class="show-span consult_subtitle">
+                    <span class="show-span consult_subtitle d-block d-lg-none">
                         проконсультируйтесь со 
                         <span class="mark-span">
                             стоматологом
@@ -272,7 +286,7 @@
                     <div class="consult_left d-none d-lg-block col-7">
                         <img src="./img/consult.png" alt="" class="consult_left-img">
                     </div>
-                    <div class="consult_right col-12 col-lg-4">
+                    <div class="consult_right col-12 col-lg-5">
                         <h3 class="consult_right-title">Записаться на консультацию</h3>
                         <p class="hide-span consult_right-subtitle">
                             Врач осмотрит Вас и поставит диагноз.
@@ -286,7 +300,7 @@
                             <input type="text" class="consult_form-name col-11" placeholder="Ваше имя">
                             <input type="phone" class="consult_form-phone col-11" placeholder="Ваш номер телефона">
                             <div class="button-genereal-wrap ">
-                                <button type="submit" class="consult_form-btn button-general">
+                                <button type="submit" class="consult_form-btn button-general openModal" >
                                     Записаться
                                 </button>
                             </div>
@@ -315,7 +329,7 @@
             <div class="container">
                 <div class="because_wrap  col-12 col-sm-8 col-md-10 mx-auto">
                     <h2 class="because-title text-center">
-                        <span class="mark-span">Нам доверяют</span>
+                        <span class="mark-span">Нам доверяют</span> <br class="d-lg-none">
                         лечение зубов уже 7 лет
                     </h2>
                     <div class="because_list">
@@ -420,9 +434,9 @@
     <section id='faq' class="faq">
         <div class="container">
             <div class="faq_wrap">
-                <h2 class="faq_title text-white text-center">Частые вопросы клиентов</h2>
+                <h2 class="faq_title text-white">Частые вопросы клиентов</h2>
                 <div class="faq_body row d-flex flex-column flex-lg-row justify-content-between">
-                    <div class="faq_left col-12 col-sm-10 col-md-7 col-lg-5 mx-auto flex-column">
+                    <div class="faq_left col-12 col-sm-10 col-md-7 col-lg-5  flex-column">
                         <a class="faq_item-link" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
                             <div class="faq_item">
                                 <div class="faq_item-header d-flex justify-content-between align-items-center">
@@ -532,7 +546,7 @@
                                 <input type="text" placeholder="Ваше имя" class="faq_form-name col-10">
                                 <input type="text" placeholder="Ваш номер телефона" class="faq_form-phone col-10">
                                 <div class="button-genereal-wrap ">
-                                    <button type="submit" class="faq_form-btn button-general">
+                                    <button type="submit" class="faq_form-btn button-general openModal">
                                         Записаться
                                     </button>
                                 </div>
@@ -541,7 +555,8 @@
                         </div>
                         <div class="faq_right-bottom d-flex align-items-end">
                             <div class="faq-bottom-wrap d-flex flex-column justify-content-center">
-                                <p class="faq-bottom-title">Зелим <br class="d-none d-lg-block" > Хаманаев</p>
+                                 
+                                <p class="faq-bottom-title">Бадаев <br class="d-none d-lg-block" > Рамзан</p>
                                 <p class="faq-bottom-subtitle">Главный врач клиники, <br> стоматолог-ортопед</p>
                             </div>
                         </div>
@@ -657,7 +672,7 @@
                 </h2>
                 <div class="team_bottom  col-12 col-sm-8 col-md-7 col-lg-10  mx-auto">
                     <div class="row flex-column flex-lg-row justify-content-between align-items-lg-start">
-                        <div class="team_left d-flex flex-row flex-lg-column col-12 col-lg-4 justify-content-between justify-content-lg-start">
+                        <div class="team_left d-flex flex-row flex-lg-column col-auti col-lg-4 justify-content-between justify-content-sm-center justify-content-lg-start">
                             <div class="team_left-arrowLeft" role='button'>
                                 <img src="./svg/up-arrow-teamSlider.svg" alt="" class="team_right-rowLeft d-none d-lg-block">
                             </div>
@@ -665,31 +680,31 @@
                                 <div class="team_left-round">
                                     <img src="./img/team-1-1.png" alt="" class="team_left-img team_left-img-1">
                                 </div>
-                                <p class="team_left-desc d-none d-lg-block">Имя Фамилия</p>
+                                <p class="team_left-desc d-none d-lg-block">Татьяна Мещерикова</p>
                             </div>
                             <div class="team_left-item" role='button'  data-id='1'>
                                 <div class="team_left-round">
                                     <img src="./img/team-2-1.png" alt="" class="team_left-img team_left-img-2">
                                 </div>
-                                <p class="team_left-desc d-none d-lg-block">Зелим Хаманаев</p>
+                                <p class="team_left-desc d-none d-lg-block">Бадаев Рамзан</p>
                             </div>
                             <div class="team_left-item" role='button'  data-id='2'>
                                 <div class="team_left-round">
                                     <img src="./img/team-3-1.png" alt="" class="team_left-img team_left-img-3">
                                 </div>
-                                <p class="team_left-desc d-none d-lg-block">Имя Фамилия</p>
+                                <p class="team_left-desc d-none d-lg-block">Музакаева Диана</p>
                             </div>
                             <div class="team_left-item" role='button'  data-id='3'>
                                 <div class="team_left-round">
                                     <img src="./img/team-4-1.png" alt="" class="team_left-img  team_left-img-4">
                                 </div>
-                                <p class="team_left-desc d-none d-lg-block">Имя Фамилия</p>
+                                <p class="team_left-desc d-none d-lg-block">Абдулаева Диана</p>
                             </div>
                             <div class="team_left-arrowRight" role='button'>
                                 <img src="./svg/up-arrow-teamSlider.svg" alt="" class="team_right-rowRight d-none d-lg-block">
                             </div>
                         </div>
-                        <div class="team_right d-flex flex-column col-12 col-lg-6 ml-auto">
+                        <div class="team_right d-flex flex-column col-12 col-sm-8 mx-auto  col-lg-6 ml-auto">
                             <div class="team_right-block order-2 order-lg-1">
                                 <div class="team_right-leftBlock">
                                     <img src="./svg/left-arrow.svg" alt="" class="team_right-rowLeft d-lg-none">
@@ -718,11 +733,36 @@
                                 </div>
                             </div>
                             <div class="team_right-desc text-center order-1 order-lg-2">
-                                <p class="mark-span ">Имя Фамилия</p>
-                                <p class="team_right-bottom">
-                                    стоматолог-ортопед <br>
-                                    опыт работы: 8 лет
-                                </p>
+                                <div class="team_desc-sliderWrap">
+                                    <div class="team_desc-sliderItem">
+                                        <p class="mark-span ">Татьяна Мещерикова</p>
+                                        <p class="team_right-bottom">
+                                            стоматолог-терапевт<br>
+                                            опыт работы: 7 лет
+                                        </p>
+                                    </div>
+                                    <div class="team_desc-sliderItem">
+                                        <p class="mark-span ">Бадаев Рамзан</p>
+                                        <p class="team_right-bottom">
+                                            стоматолог-хирург<br>
+                                            опыт работы: 13 лет
+                                        </p>
+                                    </div>
+                                    <div class="team_desc-sliderItem">
+                                        <p class="mark-span ">Музакаева Диана</p>
+                                        <p class="team_right-bottom">
+                                            стоматолог-ортопед <br>
+                                            опыт работы: 8 лет
+                                        </p>
+                                    </div>
+                                    <div class="team_desc-sliderItem">
+                                        <p class="mark-span ">Абдулаева Диана</p>
+                                        <p class="team_right-bottom">
+                                            стоматолог-ортодонт <br>
+                                            опыт работы: 5 лет
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -757,7 +797,7 @@
                         </span>
                     </p>
                     <div class="button-genereal-wrap ">
-                        <a href="#" class="locate_desc-btn button-general">
+                        <a href="#" class="locate_desc-btn button-general openModal" data-toggle="modal" data-target="#modal" data-title='Записаться на приём' data-desc='Заполните форму, чтобы записаться на приём' data-text='Узнать сроки и цены'>
                             Записаться на приём
                         </a>
                     </div>
@@ -786,7 +826,7 @@
                         <input type="text" class="call_form-name col-12" placeholder="Ваше имя">
                         <input type="text" class="call_form-phone col-12" placeholder="Ваш номер телефона">
                         <div class="button-genereal-wrap ">
-                            <button class="call_form-btn button-general">
+                            <button class="call_form-btn button-general openModal" >
                                 Позвоните мне
                             </button>
                         </div>
@@ -801,7 +841,7 @@
 
     <footer id='footer' class="footer text-white">
         <div class="container">
-            <div class="footer_wrap row " 
+            <div class="footer_wrap row " role='button'>
                 <p class="footer_phone text-white text-center d-block d-lg-none" role='button'>
                     +7 (985) 765-09-07
                 </p>
@@ -872,6 +912,22 @@
             </div>
         </div>
     </footer>
+    <!-- <button class="btn btn-danger openModal"  data-toggle="modal" data-target="#modal" data-title='123' data-desc='456' data-text='btn'>ok</button>
+    <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true" aria-labelledby="modalLabel">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <p class="modal_title"></p>
+                <p class="modal_desc"></p>
+                <form action="" class="text-center">
+                    <input type="text" name='name' placeholder="Введите Ваше имя">
+                    <input type="text" name='phone' placeholder="Введите Ваше имя">
+                    <div class="button-genereal-wrap">
+                        <button class="submitBtn button-general " type="submit" ></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
