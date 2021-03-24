@@ -48,7 +48,7 @@
                         +7 (985) 765-09-07
                     </span>
                 </span>
-                <span class="header_contact-sub d-block">Заказать бесплатный звонок</span>
+                <span class="header_contact-sub d-block openModal" data-toggle='modal' data-target='#modal' data-title='Заказать бесплатный звонок' data-desc="Заполните форму, наш менеджер свяжется с Вами" data-text="Заказать звонок">Заказать бесплатный звонок</span>
             </div>
         </div>
         <div class="nav_btn d-xl-none">
@@ -109,7 +109,7 @@
                         </p>
                     </div>
                     <div class="button-genereal-wrap text-center">
-                        <a href="#" class="button-general openModal" data-toggle="modal" data-target="#modal" data-title='Узнать сроки и цены' data-desc='Заполните форму, чтобы узнать сроки и цены' data-text='Узнать сроки и цены'>
+                        <a  class="button-general openModal" data-toggle="modal" data-target="#modal" data-title='Получить план лечения' data-desc='Заполните форму, чтобы узнать сроки и цены' data-text='Узнать сроки и цены'>
                             Узнать сроки и цены
                         </a>
                     </div>
@@ -298,7 +298,7 @@
                         </p>
                         <form action="" class="form-general consult_form d-flex flex-column align-items-start">
                             <input type="text" class="consult_form-name col-11" placeholder="Ваше имя">
-                            <input type="phone" class="consult_form-phone col-11" placeholder="Ваш номер телефона">
+                            <input type="text" class="consult_form-phone phone-mask col-11" placeholder="+7 (927) 123-45-67">
                             <div class="button-genereal-wrap ">
                                 <button type="submit" class="consult_form-btn button-general openModal" >
                                     Записаться
@@ -403,33 +403,34 @@
         <span class="slider_subtitle d-block">
             наших счастливых клиентов
         </span>
-        <div class="slider_row col-12 col-sm-12 col-md-11 col-lg-8 mx-auto d-flex flex-column">
-            <div class="slider_row-hidden overflow-hidden">
-                <div class="owl-carousel">
-                    <div class="animated fadeInRight delay-2s">
-                        <img class="owl-adaptive-item " src="/img/slider-item.png" alt="">
-                    </div>
-                    <div class="animated fadeInRight delay-2s">
-                        <img src="/img/slider-item.png" class="owl-adaptive-item" alt="">
-                    </div>
-                    <div class="animated fadeInRight delay-2s">
-                        <img src="/img/slider-item.png"  class="owl-adaptive-item" alt="">
-                    </div>
-                    <div class="animated fadeInRight delay-2s">
-                        <img src="/img/slider-item.png"  class="owl-adaptive-item" alt="">
-                    </div>
-                    <div class="animated fadeInRight delay-2s">
-                        <img src="/img/slider-item.png" class="owl-adaptive-item" alt="">
-                    </div>
+            <div class="slider-owl-2 col-12  mx-auto owl-carousel">
+                <div class="animated fadeInRight delay-2s owl-item-width-container">
+                    <img class="owl-adaptive-item " src="/img/slider-item.png" alt="">
                 </div>
-                <div class="owl-arrow-container d-none d-md-block">
-                   
+                <div class="animated fadeInRight delay-2s owl-item-width-container">
+                    <img src="/img/slider-item.png" class="owl-adaptive-item" alt="">
                 </div>
-                <div class="owl-dots-container">
-    
+                <div class="animated fadeInRight delay-2s owl-item-width-container">
+                    <img src="/img/slider-item.png"  class="owl-adaptive-item" alt="">
+                </div>
+                <div class="animated fadeInRight delay-2s owl-item-width-container">
+                    <img src="/img/slider-item.png"  class="owl-adaptive-item" alt="">
+                </div>
+                <div class="animated fadeInRight delay-2s owl-item-width-container">
+                    <img src="/img/slider-item.png" class="owl-adaptive-item" alt="">
                 </div>
             </div>
-        </div>
+            <div class="owl-arrow-container d-none d-md-block">
+               
+            </div>
+            <div class="owl-dots-container">
+
+            </div>
+        <!-- <div class="slider_row col-12 col-sm-12 col-md-11 col-lg-8 mx-auto d-flex flex-column">
+            <div class="slider_row-hidden overflow-hidden">
+                
+            </div>
+        </div> -->
     </section>
     <section id='faq' class="faq">
         <div class="container">
@@ -544,7 +545,7 @@
                             </span>
                             <form action="" class=" form-general faq_form d-flex flex-column align-items-start">
                                 <input type="text" placeholder="Ваше имя" class="faq_form-name col-10">
-                                <input type="text" placeholder="Ваш номер телефона" class="faq_form-phone col-10">
+                                <input type="text" placeholder="+7 (927) 123-45-67" class="faq_form-phone phone-mask col-10">
                                 <div class="button-genereal-wrap ">
                                     <button type="submit" class="faq_form-btn button-general openModal">
                                         Записаться
@@ -824,7 +825,7 @@
                     <p class="call_left-subtitle">Вы можете, заказав <br class="d-lg-none"> <b class="text-capitalize">БЕСПЛАТНЫЙ</b> звонок</p>
                     <form action="" class="form-general call_left-form call_form d-flex flex-column align-items-start">
                         <input type="text" class="call_form-name col-12" placeholder="Ваше имя">
-                        <input type="text" class="call_form-phone col-12" placeholder="Ваш номер телефона">
+                        <input type="text" class="call_form-phone phone-mask col-12" placeholder="+7 (927) 123-45-67">
                         <div class="button-genereal-wrap ">
                             <button class="call_form-btn button-general openModal" >
                                 Позвоните мне
@@ -912,7 +913,7 @@
             </div>
         </div>
     </footer>
-    <!-- <button class="btn btn-danger openModal"  data-toggle="modal" data-target="#modal" data-title='123' data-desc='456' data-text='btn'>ok</button>
+    <!-- <button class="btn btn-danger openModal"  data-toggle="modal" data-target="#modal" data-title='123' data-desc='456' data-text='btn'>ok</button> -->
     <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true" aria-labelledby="modalLabel">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -920,14 +921,14 @@
                 <p class="modal_desc"></p>
                 <form action="" class="text-center">
                     <input type="text" name='name' placeholder="Введите Ваше имя">
-                    <input type="text" name='phone' placeholder="Введите Ваше имя">
+                    <input type="text" class='phone-mask' name='phone' placeholder="+7 (927) 123-45-67">
                     <div class="button-genereal-wrap">
                         <button class="submitBtn button-general " type="submit" ></button>
                     </div>
                 </form>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -938,6 +939,7 @@
     <script src="./cocoen/js/cocoen.min.js"></script>
     <script src="./cocoen/js/cocoen-jquery.min.js"></script>
     <script src="./slick/slick.js"></script>
+    <script src="./jqueryMask/jquery.mask.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,10 +1,16 @@
 $(document).ready(function(){
+
+
+    // OWL SLIDER
     $(".owl-carousel").owlCarousel({
         items: 3,
+        // itemsDesktopSmall : [980,9],
+        // itemsTablet: [768,5],
+        // itemsTabletSmall: false,
+        // itemsMobile : [479,4],
         loop: true,
         nav: true,
         navText: ["<div class='owl-prev-arrow'> <div class='arrow-wrap'><img src='./svg/owl-prev-arrow.svg' alt='' class='arrow-left'></div> </div>" , "<div class='owl-next-arrow'>  <div class='arrow-wrap'><img src='./svg/owl-next-arrow.svg' alt='' class='arrow-right'></div></div>" ],
-        
         center: true,
         dots: true,
         dotsEach: true,
@@ -20,20 +26,27 @@ $(document).ready(function(){
             0:{
                 items: 1.5,
             },
-            576:{
+            479:{
                 items: 1.5,
+            },
+            576:{
+                items: 3,
             },
             768:{
                 items: 3,
             },
             1024:{
-                items:3,
+                items: 3,
             }
         }
     });
 
+
+    // COCOEN
     $('.cocoen').cocoen();
 
+
+    // SLICK SLIDER
     $(".team_slider-wrap").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -74,6 +87,10 @@ $(document).ready(function(){
         arrows: false,
         asNavFor: '.team_slider-wrap'
     })
+
+    // JQUERY MASK
+
+    $('.phone-mask').mask('+7 (000) 000-00-00');
 
     // END LIBS
 
