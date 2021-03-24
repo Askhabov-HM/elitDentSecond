@@ -15,6 +15,9 @@
     />
     <link rel="stylesheet" href="./cocoen/css/cocoen.min.css">
     <link rel="stylesheet" href="./slick/slick.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,8 +32,8 @@
                 стоматологических
                 клиник в Москве</p>
         </div>
-        <nav class="nav d-none d-xl-flex justify-content-between">
-            <a href="#plan" class="nav_item">Главная</a>
+        <nav class="nav d-none d-xl-flex justify-content-between ">
+            <a href="#plan" class="nav_item ">Главная</a>
             <a href="#service" class="nav_item">Услуги</a>
             <a href="#gift" class="nav_item">Акция</a>
             <a href="#team" class="nav_item">Врачи</a>
@@ -297,8 +300,8 @@
                             Вы получите план лечения и стоимость.
                         </p>
                         <form action="" class="form-general consult_form d-flex flex-column align-items-start">
-                            <input type="text" class="consult_form-name col-11" placeholder="Ваше имя">
-                            <input type="text" class="consult_form-phone phone-mask col-11" placeholder="+7 (927) 123-45-67">
+                            <input name='name' type="text" class="consult_form-name col-11" placeholder="Ваше имя">
+                            <input name='phone' type="text" class="consult_form-phone phone-mask col-11" placeholder="+7 (927) 123-45-67">
                             <div class="button-genereal-wrap ">
                                 <button type="submit" class="consult_form-btn button-general openModal" >
                                     Записаться
@@ -334,9 +337,9 @@
                     </h2>
                     <div class="because_list">
                         <div class="because_list-item row justify-content-end align-items-center">
-                            <div class="col-5 px-0">
-                                <p class="because_item-title d-block mb-0"> потому что:</p>
-                                <p class="because_item-desc">
+                            <div class="col-5 col-lg-6 px-0">
+                                <p class="because_item-title  d-block mb-0"> потому что:</p>
+                                <p class="because_item-desc because_item-desc-1 mb-0">
                                     Наши врачи работают на <span class="mark-span">дорогостоящем оборудовании.</span>
                                     Это повышает качество работы более чем в 20 раз.   
                                 </p>
@@ -351,7 +354,7 @@
                             <div class="col-6 px-0">
                                 <p class="because_item-title d-block col-md-10 col-lg-12 mb-0" style="text-align: right;"> из-за того, что:</p>
                                 <div class="becasuse_desc-block d-flex justify-content-end col-11 col-sm-12 col-md-10 col-lg-12">
-                                    <p class="because_item-desc" style='text-align: right;'>
+                                    <p class="because_item-desc because-item-desc-2 mb-0" style='text-align: right;'>
                                         <span class="mark-span">
                                             У нас фиксированные цены.
                                         </span>
@@ -372,9 +375,9 @@
                             </div>
                         </div>
                         <div class="because_list-item row  justify-content-end align-items-center">
-                            <div class="col-5 px-0">
+                            <div class="col-5 col-lg-6 px-0">
                                 <p class="because_item-title d-block mb-0">а также:</p>
-                                <p class="because_item-desc">
+                                <p class="because_item-desc mb-0">
                                     Потому что у нас есть
                                     <span class="mark-span">собственный учебный центр.</span>
                                     Мы повышаем квалификацию своих специалистов,
@@ -403,34 +406,35 @@
         <span class="slider_subtitle d-block">
             наших счастливых клиентов
         </span>
-            <div class="slider-owl-2 col-12  mx-auto owl-carousel">
-                <div class="animated fadeInRight delay-2s owl-item-width-container">
-                    <img class="owl-adaptive-item " src="/img/slider-item.png" alt="">
+        <div class="container">
+            <div class="slider-wrap mx-auto">
+                <div class="slider-owl-2 col-12  mx-auto owl-carousel">
+                    <div class="owl-item-width-container" data-animate="animated fadeInLeft">
+                        <img class="owl-adaptive-item " src="/img/slider-item.png" alt="">
+                    </div>
+                    <div class="owl-item-width-container" data-animate="animated fadeInLeft">
+                        <img src="/img/slider-item.png" class="owl-adaptive-item" alt="">
+                    </div>
+                    <div class="owl-item-width-container" data-animate="animated fadeInLeft">
+                        <img src="/img/slider-item.png"  class="owl-adaptive-item" alt="">
+                    </div>
+                    <div class="owl-item-width-container" data-animate="animated fadeInLeft">
+                        <img src="/img/slider-item.png"  class="owl-adaptive-item" alt="">
+                    </div>
+                    <div class="owl-item-width-container" data-animate="animated fadeInLeft">
+                        <img src="/img/slider-item.png" class="owl-adaptive-item" alt="">
+                    </div>
                 </div>
-                <div class="animated fadeInRight delay-2s owl-item-width-container">
-                    <img src="/img/slider-item.png" class="owl-adaptive-item" alt="">
+                <div class="owl-arrow-container d-none d-md-block">
+                   
                 </div>
-                <div class="animated fadeInRight delay-2s owl-item-width-container">
-                    <img src="/img/slider-item.png"  class="owl-adaptive-item" alt="">
-                </div>
-                <div class="animated fadeInRight delay-2s owl-item-width-container">
-                    <img src="/img/slider-item.png"  class="owl-adaptive-item" alt="">
-                </div>
-                <div class="animated fadeInRight delay-2s owl-item-width-container">
-                    <img src="/img/slider-item.png" class="owl-adaptive-item" alt="">
+                <div class="owl-dots-container">
+    
                 </div>
             </div>
-            <div class="owl-arrow-container d-none d-md-block">
-               
-            </div>
-            <div class="owl-dots-container">
-
-            </div>
-        <!-- <div class="slider_row col-12 col-sm-12 col-md-11 col-lg-8 mx-auto d-flex flex-column">
-            <div class="slider_row-hidden overflow-hidden">
-                
-            </div>
-        </div> -->
+        </div>
+        
+            
     </section>
     <section id='faq' class="faq">
         <div class="container">
@@ -441,96 +445,85 @@
                         <a class="faq_item-link" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
                             <div class="faq_item">
                                 <div class="faq_item-header d-flex justify-content-between align-items-center">
-                                    <h3 class="faq_item-title mb-0">Консультация и план лечения бесплатны?</h3>
+                                    <h3 class="faq_item-title mb-0 col-10">Возможно ли восстановить разрушенные зубы?</h3>
                                     <div class="faq_img-block d-flex align-items-center justify-content-center">
                                         <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
                                     </div>
                                 </div>
                                 <div class="collapse faq_item-desc" id="collapse1">
-                                    Равным образом рамки и место обучения кадров позволяет
-                                    оценить значение модели развития. Не следует,
-                                    однако забывать, что рамки и место обучения кадров влечет
-                                    за собой процесс внедрения новых предложений.
+                                    Да. Причем, восстановить можно даже очень разрушенные зубы.
+                                    Но стоит помнить, что если долго откладывать лечение,
+                                    можно достигнуть точки "невозврата",
+                                    когда разрушенные зубы придется удалить.
                                 </div>
                             </div>
                         </a>
                         <a class="faq_item-link" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
                             <div class="faq_item ">
                                 <div class="faq_item-header d-flex justify-content-between align-items-center">
-                                    <h3 class="faq_item-title mb-0">Как вы соблюдаете стерильность?</h3>
+                                    <h3 class="faq_item-title mb-0 col-10">Как происходит коррекция зубов брекетами?</h3>
                                     <div class="faq_img-block d-flex align-items-center justify-content-center">
                                         <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
                                     </div>
                                 </div>
                                 <div class="collapse faq_item-desc" id="collapse2">
-                                    Равным образом рамки и место обучения кадров позволяет
-                                    оценить значение модели развития. Не следует,
-                                    однако забывать, что рамки и место обучения кадров влечет
-                                    за собой процесс внедрения новых предложений.
+                                    На зубы устанавливается корректирующая дуга, которая оказывает на них нагрузку.
+                                    Переодически стоматолог поправляет дугу в зависимости от смещения зубов.
                                 </div>
                             </div>
                         </a>
                         <a class="faq_item-link" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample">
                             <div class="faq_item">
                                 <div class="faq_item-header d-flex justify-content-between align-items-center">
-                                    <h3 class="faq_item-title mb-0">Как вы устраняете боль?</h3>
+                                    <h3 class="faq_item-title mb-0 col-10">Что такое имплантация зубов?</h3>
                                     <div class="faq_img-block d-flex align-items-center justify-content-center">
                                         <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
                                     </div>
                                 </div>
                                 <div class="collapse faq_item-desc" id="collapse3">
-                                    Равным образом рамки и место обучения кадров позволяет
-                                    оценить значение модели развития. Не следует,
-                                    однако забывать, что рамки и место обучения кадров влечет
-                                    за собой процесс внедрения новых предложений.
+                                    Имплантация зубов - это установка искуственного корня зуба на место отсутствующего зуба,
+                                    с последующей установкой на имплант искуственного зуба
+                                    (металлокерамического или изготовленного из других материалов)
                                 </div>
                             </div>
                         </a>
                         <a class="faq_item-link" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapseExample">
                             <div class="faq_item">
                                 <div class="faq_item-header d-flex justify-content-between align-items-center">
-                                    <h3 class="faq_item-title mb-0">У вас опытные врачи?</h3>
+                                    <h3 class="faq_item-title mb-0 col-10">Как часто необходимо делать профессиональную чистку полости рта?</h3>
                                     <div class="faq_img-block d-flex align-items-center justify-content-center">
                                         <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
                                     </div>
                                 </div>
                                 <div class="collapse faq_item-desc" id="collapse4">
-                                    Равным образом рамки и место обучения кадров позволяет
-                                    оценить значение модели развития. Не следует,
-                                    однако забывать, что рамки и место обучения кадров влечет
-                                    за собой процесс внедрения новых предложений.
+                                    Два раза в год. Это является оптимальным количеством для поддержания здоровья ваших зубов и десен.
                                 </div>
                             </div>
                         </a>
                         <a class="faq_item-link" data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapseExample">
                             <div class="faq_item">
                                 <div class="faq_item-header d-flex justify-content-between align-items-center">
-                                    <h3 class="faq_item-title mb-0">А с детьми вы работаете?</h3>
+                                    <h3 class="faq_item-title mb-0 col-10">Что такое керамические виниры?</h3>
                                     <div class="faq_img-block d-flex align-items-center justify-content-center">
                                         <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
                                     </div>
                                 </div>
                                 <div class="collapse faq_item-desc" id="collapse5">
-                                    Равным образом рамки и место обучения кадров позволяет
-                                    оценить значение модели развития. Не следует,
-                                    однако забывать, что рамки и место обучения кадров влечет
-                                    за собой процесс внедрения новых предложений.
+                                    Это тонкие пластинки, которые прикреплюят на зубы с целью улучшения внешнего вида.
+                                    Используются в случаях, если между зубами имеются промежутки или если зубы неправильной формы.
                                 </div>
                             </div>
                         </a>
                         <a class="faq_item-link" data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapseExample">
                             <div class="faq_item">
                                 <div class="faq_item-header d-flex justify-content-between align-items-center">
-                                    <h3 class="faq_item-title mb-0">А даёте ли вы какие-нибудь гарантии?</h3>
+                                    <h3 class="faq_item-title mb-0 col-10">А даёте ли вы какие-нибудь гарантии?</h3>
                                     <div class="faq_img-block d-flex align-items-center justify-content-center">
                                         <img src="./svg/faq-arrow.svg" alt="" class="faq_img">
                                     </div>
                                 </div>
                                 <div class="collapse faq_item-desc" id="collapse6">
-                                    Равным образом рамки и место обучения кадров позволяет
-                                    оценить значение модели развития. Не следует,
-                                    однако забывать, что рамки и место обучения кадров влечет
-                                    за собой процесс внедрения новых предложений.
+                                    Нет
                                 </div>
                             </div>
                         </a>
@@ -544,8 +537,8 @@
                                 Оставьте контакты и мы перезвоним Вам:
                             </span>
                             <form action="" class=" form-general faq_form d-flex flex-column align-items-start">
-                                <input type="text" placeholder="Ваше имя" class="faq_form-name col-10">
-                                <input type="text" placeholder="+7 (927) 123-45-67" class="faq_form-phone phone-mask col-10">
+                                <input name='name' type="text" placeholder="Ваше имя" class="faq_form-name col-10">
+                                <input name='phone' type="text" placeholder="+7 (927) 123-45-67" class="faq_form-phone phone-mask col-10">
                                 <div class="button-genereal-wrap ">
                                     <button type="submit" class="faq_form-btn button-general openModal">
                                         Записаться
@@ -677,19 +670,19 @@
                             <div class="team_left-arrowLeft" role='button'>
                                 <img src="./svg/up-arrow-teamSlider.svg" alt="" class="team_right-rowLeft d-none d-lg-block">
                             </div>
-                            <div class="team_left-item" role='button' data-id='0'>
+                            <div class="team_left-item " role='button' data-id='0'>
                                 <div class="team_left-round">
                                     <img src="./img/team-1-1.png" alt="" class="team_left-img team_left-img-1">
                                 </div>
                                 <p class="team_left-desc d-none d-lg-block">Татьяна Мещерикова</p>
                             </div>
-                            <div class="team_left-item" role='button'  data-id='1'>
+                            <div class="team_left-item activeTeamItem" role='button'  data-id='1'>
                                 <div class="team_left-round">
                                     <img src="./img/team-2-1.png" alt="" class="team_left-img team_left-img-2">
                                 </div>
                                 <p class="team_left-desc d-none d-lg-block">Бадаев Рамзан</p>
                             </div>
-                            <div class="team_left-item" role='button'  data-id='2'>
+                            <div class="team_left-item " role='button'  data-id='2'>
                                 <div class="team_left-round">
                                     <img src="./img/team-3-1.png" alt="" class="team_left-img team_left-img-3">
                                 </div>
@@ -824,10 +817,10 @@
                         и записаться на приём</h2>
                     <p class="call_left-subtitle">Вы можете, заказав <br class="d-lg-none"> <b class="text-capitalize">БЕСПЛАТНЫЙ</b> звонок</p>
                     <form action="" class="form-general call_left-form call_form d-flex flex-column align-items-start">
-                        <input type="text" class="call_form-name col-12" placeholder="Ваше имя">
-                        <input type="text" class="call_form-phone phone-mask col-12" placeholder="+7 (927) 123-45-67">
+                        <input name='name' type="text" class="call_form-name col-12" placeholder="Ваше имя">
+                        <input name='phone' type="text" class="call_form-phone phone-mask col-12" placeholder="+7 (927) 123-45-67">
                         <div class="button-genereal-wrap ">
-                            <button class="call_form-btn button-general openModal" >
+                            <button type='submit' class="call_form-btn button-general openModal" >
                                 Позвоните мне
                             </button>
                         </div>
@@ -907,7 +900,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="footer_media-dev d-block mt-auto">Разработали с любовью<br>
+                    <a  class="footer_media-dev d-block mt-auto">Разработали с любовью<br>
                         AS AGENCY</a>
                 </div>
             </div>
@@ -917,18 +910,56 @@
     <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true" aria-labelledby="modalLabel">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
+                <button type="button" data-dismiss="modal" aria-label="close" class="close btn-close btn-close-white  modal-close-btn">
+                    <span aria-hidden="true">
+                        
+                    </span>
+                </button>
                 <p class="modal_title"></p>
                 <p class="modal_desc"></p>
-                <form action="" class="text-center">
-                    <input type="text" name='name' placeholder="Введите Ваше имя">
-                    <input type="text" class='phone-mask' name='phone' placeholder="+7 (927) 123-45-67">
+                <form action="" class="modalForm text-center">
+                    <input name='name' type="text" name='name' placeholder="Введите Ваше имя">
+                    <input name='phone' type="text" class='phone-mask' name='phone' placeholder="+7 (927) 123-45-67">
                     <div class="button-genereal-wrap">
                         <button class="submitBtn button-general " type="submit" ></button>
                     </div>
                 </form>
+                <div class="loader d-none justify-content-center align-items-center">
+                    <div class="d-block">
+                        <div id="floatingCirclesG">
+                            <div class="f_circleG" id="frotateG_01"></div>
+                            <div class="f_circleG" id="frotateG_02"></div>
+                            <div class="f_circleG" id="frotateG_03"></div>
+                            <div class="f_circleG" id="frotateG_04"></div>
+                            <div class="f_circleG" id="frotateG_05"></div>
+                            <div class="f_circleG" id="frotateG_06"></div>
+                            <div class="f_circleG" id="frotateG_07"></div>
+                            <div class="f_circleG" id="frotateG_08"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" tabindex="-1" aria-hidden="true" aria-laballedby="#modalSuccessLabel" id="modalSuccess">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" data-dismiss="modal" aria-label="close" class="close btn-close btn-close-white  modal-close-btn">
+                    <span aria-hidden="true">
+                        
+                    </span>
+                </button>
+                <div class="modal-success-icon-wrap mx-auto">
+                    <img src="./svg/modal-success-icon.svg" alt="" class="modal-success-icon">
+                </div>
+                <p class="modal_success-title">Ваша  заявка
+                    <span class="mark-span"></span>успешно</span> принята!</p>
+                <p class="modal_success-desc">Мы свяжемся с вами в ближайшее время</p>
+            </div>
+        </div>
+    </div>
+
+    
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
