@@ -149,6 +149,7 @@ $(document).ready(function(){
     })
 
     function addRemoveTeamClass(target){ // target - целевой элемент, к которому добавить .activeTeamItem
+        console.log(target)
         $('.team_left-item').each( function(index){ // перебрать все элементы с .team_left-item
             $(this).removeClass('activeTeamItem');  // удалить .activeTeamItem
         })

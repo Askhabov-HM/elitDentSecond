@@ -408,6 +408,10 @@ body {
     color:    #ff2272;
 }
 
+.form-generalinput::placeholder{
+    padding-top: 15px;
+}
+
 
 
 input:focus {
@@ -2422,9 +2426,6 @@ input:focus {
         margin-bottom: 35px;
     }
     
-    .because-pre-wrap{
-        max-width: 320px;
-    }
 
     .because-title{
         font-size: 24px;
@@ -2434,24 +2435,20 @@ input:focus {
     .because_list-wrap{}
 
     .because_item-desc {
-        width: 161px;
         font-size: 12px;
         line-height: 18px;
     }
 
     
     .because_item-desc-1{
-        width: 129px;
     }
 
     .because_item-desc-2{
-        width: 148px;
     }
 
 
     .because_item-title {
         font-size: 20px;
-        line-height: 30px;
     }
 
     
@@ -2822,7 +2819,7 @@ input:focus {
 }
 
 @media (min-width: 576px){
-
+    because-pre-wrap
 
     .because_item-title{
         font-size: 27px;
@@ -2841,6 +2838,24 @@ input:focus {
 
     
     
+}
+
+@media (max-width: 576px){
+    .because-pre-wrap {
+        max-width: 320px;
+    }
+
+    .because_item-desc-1 {
+        width: 128px;
+    }
+
+    .because_item-img {
+        width: 200px;
+    }
+
+    .because_item-img-2 {
+        transform: translateX(-25%);
+    }
 }
 
 
@@ -2885,7 +2900,13 @@ input:focus {
         font-size: 36px;
     }
 
-    
+    .because_item-img {
+        width: 384px;
+    }
+
+    .because_item-img-2{
+        transform: translateX(-17%);
+    }
 
     /* .locate_wrap {
         margin-bottom: 360px;
@@ -2921,6 +2942,24 @@ input:focus {
     .locate_wrap{
         padding: 0;
     }
+
+    .because_item-title {
+        font-size: 49px;
+    }
+
+    .because_item-desc {
+        font-size: 17.6px;
+        width: 386.4px;
+    }
+
+    .because_item-img{
+        width: 512px;
+    }
+    .because_item-img-2{
+        transform: translateX(-25%);
+    }
+
+    
 }
 
 @media (min-width: 991.98px) and (max-width: 1199.98px){
@@ -3007,9 +3046,7 @@ input:focus {
 }
 
 @media (min-width: 1088px) {
-    .because_item-title {
-        font-size: 62px;
-    }
+   
 }
 
 @media (min-width: 1200px){
@@ -3045,6 +3082,27 @@ input:focus {
 
     .wrap-5 {
         transform: translate(429%, 4%);
+    }
+
+    .because_item-title {
+        font-size: 62px;
+    }
+    
+    .because_item-img{
+        width: 640px;
+    }
+      
+
+    .because_item-img-1{
+        transform: translateX(9%);
+    }
+    
+    .because_item-img-2{
+        transform: translateX(-33%);
+    }
+    
+    .because_item-img-3{
+        transform: translateX(10%) ;
     }
 
 }
