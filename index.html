@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Элинт Dent</title>
 
     <link rel="stylesheet" href="owl/owl.carousel.min.css">
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
@@ -33,13 +33,13 @@
                 клиник в Москве</p>
         </div>
         <nav class="nav d-none d-xl-flex justify-content-between ">
-            <a href="#plan" class="nav_item ">Главная</a>
-            <a href="#service" class="nav_item">Услуги</a>
-            <a href="#gift" class="nav_item">Акция</a>
-            <a href="#team" class="nav_item">Врачи</a>
-            <a href="#faq" class="nav_item">Вопросы и ответы</a>
-            <a href="#slider" class="nav_item">Примеры работ</a>
-            <a href="#footer" class="nav_item">Контакты</a>
+            <a href="#plan" data-href='#planID' class="nav_item ">Главная</a>
+            <a href="#service" data-href='#serviceID' class="nav_item">Услуги</a>
+            <a href="#gift" data-href='#giftID'  class="nav_item">Акция</a>
+            <a href="#team" data-href='#teamID'  class="nav_item">Врачи</a>
+            <a href="#faq" data-href='#faqID'  class="nav_item">Вопросы и ответы</a>
+            <a href="#slider" data-href='#sliderID'  class="nav_item">Примеры работ</a>
+            <a href="#footer" data-href='#footerID'  class="nav_item">Контакты</a>
         </nav>
         <div class="header_contact d-none d-xl-flex align-items-center">
             <div class="header_contact-imgWrap">
@@ -60,13 +60,13 @@
         <div class="sidebar col-12 col-md-8 col-lg-6 d-xl-none">
             <div class="sidebar_body ">
                 <nav class="sidebar_nav d-flex flex-column align-items-start">
-                    <a href="#plan" class="sidebar_nav-item">Главная</a>
-                    <a href="#service" class="sidebar_nav-item">Услуги</a>
-                    <a href="#gift" class="sidebar_nav-item">Акция</a>
-                    <a href="#team" class="sidebar_nav-item">Врачи</a>
-                    <a href="#faq" class="sidebar_nav-item">Вопросы и ответы</a>
-                    <a href="#slider" class="sidebar_nav-item">Примеры работ</a>
-                    <a href="#footer" class="sidebar_nav-item">Контакты</a>
+                    <a href="#plan" data-href='#planID' class="sidebar_nav-item">Главная</a>
+                    <a href="#service" data-href='#serviceID'  class="sidebar_nav-item">Услуги</a>
+                    <a href="#gift" data-href='#giftID'  class="sidebar_nav-item">Акция</a>
+                    <a href="#team" data-href='#teamID'  class="sidebar_nav-item">Врачи</a>
+                    <a href="#faq" data-href='#faqID'  class="sidebar_nav-item">Вопросы и ответы</a>
+                    <a href="#slider" data-href='#sliderID'  class="sidebar_nav-item">Примеры работ</a>
+                    <a href="#footer" data-href='#footerID'  class="sidebar_nav-item">Контакты</a>
                 </nav>
                 <div class="sidebar_contacts-block">
                     <a href="" class="sidebar_phone d-block">
@@ -74,7 +74,14 @@
                             +7 (985) 765-09-07
                         </div>
                     </a>
-                    <a href="" class="sidebar_callForm">Заказать обратный звонок</a>
+                    <a  class="sidebar_callFormo openModal"
+                        data-toggle='modal'
+                        data-target='#modal'
+                        data-title='Заказать бесплатный звонок'
+                        data-desc="Заполните форму, наш менеджер свяжется с Вами"
+                        data-text="Заказать звонок"  >
+                        Заказать обратный звонок
+                    </a>
                 </div>
                 <div class="sidebar_media d-flex">
                     <div class="sidebar_media-item">
@@ -92,13 +99,13 @@
         </div>
     </header>
     
-    <section id='plan' class="plan">
+    <section id='planID' class="plan">
         <div class="container">
-            <div class="plan_container row flex-column flex-md-row justify-content-center align-items-center align-items-lg-stretch">
-                <div class="plan_left col-12 col-lg-5 offset-xl-1">
+            <div class="plan_container row flex-column flex-md-row justify-content-center  justify-content-lg-end align-items-center align-items-lg-stretch">
+                <div class="plan_left col-12 col-lg-5 ">
                     <img src="./img/plan-left.png" alt="" class="plan_img">
                 </div>
-                <div class="plan_right col-auto col-lg-5">
+                <div class="plan_right col-auto col-lg-6">
                     <div class="plan_right-top">
                         <h1 class="plan_title"> Мы лечим зубы <br> <span class="mark-span">без боли и стресса</span></h1>
                         <div class="plan_subtitle">в Московской стоматологии <br> фиксированных цен “ЭлитДент”</div>
@@ -121,7 +128,7 @@
         </div>
     </section>
 
-    <section id='gift' class="gift">
+    <section id='giftID' class="gift">
         <div class="container">
             <div class="gift_top">
                 <h2 class="gift_header">
@@ -148,7 +155,7 @@
         </div>
     </section>
     
-    <section id='service' class="service">
+    <section id='serviceID' class="service">
         <div class="container col-12 col-sm-10 col-md-9 col-lg-12">
             <h2 class="service_title">
                 Все наши услуги
@@ -258,7 +265,7 @@
         </div>
     </section>
     
-    <section id='consult' class="consult col-12 col-sm-8 col-md-8 col-lg-12 mx-auto overflow-hidden">
+    <section id='consultID' class="consult col-12 col-sm-8 col-md-8 col-lg-12 mx-auto overflow-hidden">
         <div class="container">
             <div class="consult_wrap col-10 mx-auto">
                 <div class="consult_top ">
@@ -300,8 +307,8 @@
                             Вы получите план лечения и стоимость.
                         </p>
                         <form action="" class="form-general consult_form d-flex flex-column align-items-start">
-                            <input name='name' type="text" class="consult_form-name col-11" placeholder="Ваше имя">
-                            <input name='phone' type="text" class="consult_form-phone phone-mask col-11" placeholder="+7 (927) 123-45-67">
+                            <input required name='name' type="text" class="consult_form-name col-11" placeholder="Ваше имя">
+                            <input required name='phone' type="text" class="consult_form-phone phone-mask col-11" placeholder="+7 (927) 123-45-67">
                             <div class="button-genereal-wrap ">
                                 <button type="submit" class="consult_form-btn button-general openModal" >
                                     Записаться
@@ -337,21 +344,21 @@
                     </h2>
                     <div class="because_list">
                         <div class="because_list-item row justify-content-end align-items-center">
-                            <div class="col-5 col-lg-6 px-0">
+                            <div class="col-6 col-lg-6 px-0">
                                 <p class="because_item-title  d-block mb-0"> потому что:</p>
                                 <p class="because_item-desc because_item-desc-1 mb-0">
                                     Наши врачи работают на <span class="mark-span">дорогостоящем оборудовании.</span>
                                     Это повышает качество работы более чем в 20 раз.   
                                 </p>
                             </div>
-                            <div class="col-6 px-0">
+                            <div class="col-5 px-0">
                                 <div class="because_item-wrap">
                                     <img src="./img/because-1.png" alt="" class="because_item-img because_item-img-1">
                                 </div>
                             </div>
                         </div>
                         <div class="because_list-item row flex-row-reverse justify-content-start align-items-center">
-                            <div class="col-7 px-0">
+                            <div class="col-8 px-0">
                                 <p class="because_item-title d-block col-md-12 col-lg-12 mb-0" style="text-align: right;"> из-за того, что:</p>
                                 <div class="becasuse_desc-block d-flex justify-content-end col-11 col-sm-12 col-md-12 col-lg-12">
                                     <p class="because_item-desc because-item-desc-2 mb-0" style="text-align: right;">
@@ -368,7 +375,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-5 px-0 d-flex justify-content-start">
+                            <div class="col-4 px-0 d-flex justify-content-start">
                                 <div class="because_item-wrap">
                                     <img src="./img/because-2.png" alt="" class="because_item-img because_item-img-2">
                                 </div>
@@ -397,7 +404,7 @@
         </div>
     </section>
 
-    <section id='slider' class="slider">
+    <section id='sliderID' class="slider">
         <h2 class="slider_title">
             <span class="mark-span">
                 Здоровые зубы <br class="d-lg-none"> и красивые улыбки
@@ -436,7 +443,7 @@
         
             
     </section>
-    <section id='faq' class="faq">
+    <section id='faqID' class="faq">
         <div class="container">
             <div class="faq_wrap">
                 <h2 class="faq_title text-white">Частые вопросы клиентов</h2>
@@ -537,8 +544,8 @@
                                 Оставьте контакты и мы перезвоним Вам:
                             </span>
                             <form action="" class=" form-general faq_form d-flex flex-column align-items-start">
-                                <input name='name' type="text" placeholder="Ваше имя" class="faq_form-name col-10">
-                                <input name='phone' type="text" placeholder="+7 (927) 123-45-67" class="faq_form-phone phone-mask col-10">
+                                <input required name='name' type="text" placeholder="Ваше имя" class="faq_form-name col-10">
+                                <input required name='phone' type="text" placeholder="+7 (927) 123-45-67" class="faq_form-phone phone-mask col-10">
                                 <div class="button-genereal-wrap ">
                                     <button type="submit" class="faq_form-btn button-general openModal">
                                         Записаться
@@ -560,7 +567,7 @@
         </div>
     </section>
 
-    <section class="steps ">
+    <section class="steps">
         <div class="container">
             <div class="steps_wrap row ">
                 <div class="steps_header">
@@ -658,7 +665,7 @@
         </div>
     </section>
 
-    <section id='team' class="team">
+    <section id='teamID' class="team">
         <div class="container">
             <div class="team_wrap row">
                 <h2 class="team_header">
@@ -817,8 +824,8 @@
                         и записаться на приём</h2>
                     <p class="call_left-subtitle">Вы можете, заказав <br class="d-lg-none"> <b class="text-capitalize">БЕСПЛАТНЫЙ</b> звонок</p>
                     <form action="" class="form-general call_left-form call_form d-flex flex-column align-items-start">
-                        <input name='name' type="text" class="call_form-name col-12" placeholder="Ваше имя">
-                        <input name='phone' type="text" class="call_form-phone phone-mask col-12" placeholder="+7 (927) 123-45-67">
+                        <input required name='name' type="text" class="call_form-name col-12" placeholder="Ваше имя">
+                        <input required name='phone' type="text" class="call_form-phone phone-mask col-12" placeholder="+7 (927) 123-45-67">
                         <div class="button-genereal-wrap ">
                             <button type='submit' class="call_form-btn button-general openModal" >
                                 Позвоните мне
@@ -833,7 +840,7 @@
         </div>
     </section>
 
-    <footer id='footer' class="footer text-white">
+    <footer id='footerID' class="footer text-white">
         <div class="container">
             <div class="footer_wrap row " role='button'>
                 <p class="footer_phone text-white text-center d-block d-lg-none" role='button'>
@@ -918,8 +925,8 @@
                 <p class="modal_title"></p>
                 <p class="modal_desc"></p>
                 <form action="" class="modalForm text-center">
-                    <input name='name' type="text" name='name' placeholder="Введите Ваше имя">
-                    <input name='phone' type="text" class='phone-mask' name='phone' placeholder="+7 (927) 123-45-67">
+                    <input required name='name' type="text" name='name' placeholder="Введите Ваше имя">
+                    <input required name='phone' type="text" class='phone-mask' name='phone' placeholder="+7 (927) 123-45-67">
                     <div class="button-genereal-wrap">
                         <button class="submitBtn button-general " type="submit" ></button>
                     </div>
@@ -953,7 +960,7 @@
                     <img src="./svg/modal-success-icon.svg" alt="" class="modal-success-icon">
                 </div>
                 <p class="modal_success-title">Ваша  заявка
-                    <span class="mark-span"></span>успешно</span> принята!</p>
+                    <span class="mark-span">успешно</span> принята!</p>
                 <p class="modal_success-desc">Мы свяжемся с вами в ближайшее время</p>
             </div>
         </div>

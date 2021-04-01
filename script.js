@@ -4,6 +4,7 @@ $(document).ready(function(){
     // OWL SLIDER
     $(".owl-carousel").owlCarousel({
         items: 3,
+        startPosition: 2,
         loop: true,
         nav: true,
         navText: ["<div class='owl-prev-arrow'> <div class='arrow-wrap'><img src='./svg/owl-prev-arrow.svg' alt='' class='arrow-left'></div> </div>" , "<div class='owl-next-arrow'>  <div class='arrow-wrap'><img src='./svg/owl-next-arrow.svg' alt='' class='arrow-right'></div></div>" ],
@@ -46,6 +47,7 @@ $(document).ready(function(){
     $(".team_slider-wrap").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        initialSlide: 1,
         fade: true,
         arrows: true,
         prevArrow: '.team_right-leftBlock',
@@ -70,6 +72,7 @@ $(document).ready(function(){
     });
     
     $('.team_left-item').click( function(e){
+        e.stopPropagation()
         let dataId = $(this).data('id')
         $('.team_slider-wrap').slick('slickGoTo', dataId);
     });
@@ -77,6 +80,7 @@ $(document).ready(function(){
 
     $('.team_desc-sliderWrap').slick({
         slidesToShow: 1,
+        initialSlide: 1,
         draggable:false,
         dots: false,
         slidesToScroll: 1,
@@ -104,6 +108,7 @@ $(document).ready(function(){
 
     // MODALS
 
+    // Вставить данные в заголовок и описание
     $('.openModal').click( function(e){
         let self = e.target;
         let dataTitle = $(self).data('title');
@@ -114,6 +119,13 @@ $(document).ready(function(){
         $('.modal_desc').text(dataDesc)
         $('.submitBtn').text(dataBtnText)
     })
+
+    // Очистить инпуты после закоытия модал
+    $('.modal').on('hidden.bs.modal', function(){
+        $('.modalForm input').val('');
+    })
+
+    
 
     // GENERAL FORM SUBMIT
 
@@ -129,8 +141,8 @@ $(document).ready(function(){
             }   
         })
         .done( function(response){
+            // если успешно показать модал успешно
             if($('#modal').hasClass('show')){
-                console.log(123)
                 $('#modal').modal('hide');
                 $('#modalSuccess').modal('show');
             }
@@ -149,11 +161,16 @@ $(document).ready(function(){
     })
 
     function addRemoveTeamClass(target){ // target - целевой элемент, к которому добавить .activeTeamItem
-        console.log(target)
-        $('.team_left-item').each( function(index){ // перебрать все элементы с .team_left-item
-            $(this).removeClass('activeTeamItem');  // удалить .activeTeamItem
-        })
-        $(target).addClass('activeTeamItem'); // присвоить целевому элементу .activeTeamItem
+
+        // условие нужно, чтобы до завершения анимации слайда нельзя было сменить активность team_left-item
+        if( $('.team_slider-wrap').slick('slickCurrentSlide') === $(target).data('id')){
+
+            $('.team_left-item').each( function(index){ // перебрать все элементы с .team_left-item
+                $(this).removeClass('activeTeamItem');  // удалить .activeTeamItem
+            });
+
+            $(target).addClass('activeTeamItem'); // присвоить целевому элементу .activeTeamItem
+        }
     }
 
     // SLICK ARROW 
@@ -169,5 +186,39 @@ $(document).ready(function(){
     $('.faq_item-link').click(function(e){
         $(this).find('.faq_item-title').toggleClass('faq-active-item')
     })
+
+    // NAV SCROLL TO
+
+    $('.nav_item').click( function(e){
+        let target = e.target;
+        let href = $(target).data('href');
+        $('html, body').animate({
+            scrollTop: $(href).offset().top - 107 // класс объекта к которому приезжаем
+        }, 'linear'); // Скорость прокрутки
+    })
+
+    $('.sidebar_nav-item').click( function(e){
+        let target = e.target;
+        let href = $(target).data('href');
+        $('.sidebar').removeClass('animate-sidebar');
+        $('.nav_btn-item').removeClass('animate-nav-item'); 
+        $('html, body').animate({
+            scrollTop: $(href).offset().top - 65 // класс объекта к которому приезжаем
+        }, 1000, 'linear'); // Скорость прокрутки
+    })
+
+    
+
+    $("#callme").click(function() { // ID откуда кливаем
+        
+    });
+
+    
+
+    $("#button").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#elementtoScrollToID").offset().top
+        }, 2000);
+    });
 
   });
