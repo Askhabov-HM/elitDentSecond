@@ -2948,7 +2948,34 @@ input:focus {
         transform: scale(1,1);
     }
 
+    .because_wrap  {
+        max-width: 576px;
+    }
+
+    .because_list-item {
+        max-width: 576px;
+        
+    }
+
 }
+
+@media (min-width: 768px) and (max-width: 1023.98px){
+    .because_wrap  {
+        max-width: 768px;
+    }
+    .because_list-item {
+        max-width: 768px;
+        
+    }
+
+
+    .because_item-desc {
+        font-size: 17px;
+        max-width: 283px;
+    }
+}
+
+
 
 @media (min-width: 768px) {
 
